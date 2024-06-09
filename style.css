@@ -1,8 +1,10 @@
-﻿body {
+﻿body 
+{
     background-color: black;
 }
 
-ul {
+ul 
+{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -14,12 +16,14 @@ ul {
     top: 0;
 }
 
-li {
+li 
+{
     float: inline-start;
     border-right: 4px solid #bbb;
 }
 
-    li a {
+    li a 
+    {
         display: block;
         color: white;
         font-size: 30px;
@@ -30,40 +34,47 @@ li {
     }
 
         /* Change the link color to #111 (black) on hover */
-        li a:hover {
+        li a:hover 
+        {
             background-color: purple;
         }
 
 
-.active {
+.active 
+{
     background-color: Fuchsia;
 }
 
-h1 {
+h1 
+{
     color: white;
     font-size: 60px;
     font-family: 'Comic Sans MS';
 }
 
-h3 {
+h3 
+{
     color: white;
     font-size: 40px;
     font-family: 'Comic Sans MS'
 }
 
-p {
+p 
+{
     color: white;
     font-size: 24px;
     font-family: 'Comic Sans MS';
 }
 
-pre {
+pre 
+{
     color: white;
     font-size: 24px;
     font-family: 'Comic Sans MS';
 }
 
-footer {
+footer 
+{
     background-color: rebeccapurple;
     text-align: center;
     border-top: 4px solid #bbb;
@@ -71,25 +82,30 @@ footer {
     padding: 10px;
 }
 
-.container {
+.container 
+{
     overflow: hidden;
 }
 
-.filterDiv {
+.filterDiv 
+{
     color: black;
     margin: 2px;
     text-align: center;
     font-size: 24px;
     font-family: 'Comic Sans MS';
+    display: none; /* Hidden by default */
 }
 
 /* The "show" class is added to the filtered elements */
-.show {
+.show 
+{
     display: block;
 }
 
 /* Style the buttons */
-.btn {
+.btn 
+{
     border: 4px solid #bbb;
     outline: none;
     padding: 14px 20px;
@@ -101,11 +117,13 @@ footer {
 }
 
     /* Add a light grey background on mouse-over */
-    .btn:hover {
+    .btn:hover 
+    {
         background-color: purple;
     }
 
     /* Add a dark background to the active button */
-    .btn.active {
+    .btn.active 
+    {
         background-color: Fuchsia;
     }

@@ -7,12 +7,18 @@
 </head>
 <body>
     <ul>
-        <li><a class="active" href="default.asp">Home</a></li>
-        <li><a href="portfolio.asp">Portfolio</a></li>
-        <li><a href="contact.asp">Contact</a></li>
+        <li>
+            <a class="active" href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
 
         <li style="float:right">
-            <a href="linkedin.asp">
+            <a href="https://uk.linkedin.com/in/cai-mills-a31806241">
                 <image src="/images/linkedin.png" width="33" height="33" alt="LinkedIn"></image>
             </a>
         </li>
@@ -22,62 +28,100 @@
             </a>
         </li>
         <li style="float:right">
-            <a href="https://www.youtube.com/channel/UCl9wkqcFLizilnqU9lJ1rKQ">
+            <a href="https://www.youtube.com/@caimills6565">
                 <image src="/images/youtube.png" width="53" height="33" alt="Youtube"></image>
             </a>
         </li>
         <li style="float:right">
-            <a href="instagram.asp">
+            <a href="https://www.instagram.com/cai_mills/">
                 <image src="/images/instagram.png" width="33" height="33" alt="Instagram"></image>
             </a>
         </li>
         <li style="float: right; border-left: 4px solid #bbb;">
-            <a href="https://x.com/epic_cai">
+            <a href="https://x.com/CaiMills">
                 <image src="/images/x.png" width="33" height="33" alt="X"></image>
             </a>
         </li>
     </ul>
 
-    <h1 style="text-align: center; font-size: 100px; font-family: Bahnschrift">Cai Mills</h1>
-    <h1 style="text-align: center; font-size: 20px; font-family: Bahnschrift">Computer Games Programmer</h1>
+    <h1 style="text-align: center; font-size: 100px; font-family: Bahnschrift">
+    Cai Mills
+    </h1>
 
-    <h1 style="color: Fuchsia">About Me</h1>
+    <h1 style="text-align: center; font-size: 20px; font-family: Bahnschrift">
+    Computer Games Programmer
+    </h1>
 
-    <image src="/images/pictureOfSelf.jpg" style="position: static; float: right; border: 4px solid #ff00dc;" width="800" height="600" alt="Picture of Me: Cai Mills"></image>
+    <h1 style="color: Fuchsia">
+    About Me
+    </h1>
 
-    <p>
+    <image src="/images/pictureOfSelf.jpg" style="position: static; float: right; border: 4px solid #ff00dc;" width="600" height="600" alt="Picture of Me: Cai Mills"></image>
+
+    <p style="word-wrap: break-word; width: 800px">
         My name is Cai Mills, I am an aspiring Welsh game developer currently studying games programming. I have always been completely enthralled with the creation of games, and have now channelled that passion directly into my projects.
     </p>
 
-    <h3 style="color: rebeccapurple">Education</h3>
+    <h3 style="color: rebeccapurple">
+    Education
+    </h3>
 
-    <p>Staffordshire University 2023 - Present</p>
+    <p>
+    Staffordshire University 2023 - Present
+    </p>
 
-    <p>Course - Computer Games Programming</p>
+    <p>
+    Course - Computer Games Programming
+    </p>
 
-    <p>Experienced in using: - C++, C#, HTML, SDL, OpenGL, Unity, Unreal Engine 5, Aseprite</p>
+    <p>
+    Experienced in using: - C++, C#, HTML, SDL, OpenGL, Unity, Unreal Engine 5, Aseprite
+    </p>
 
-    <h3 style="color: rebeccapurple">Work Experience</h3>
-    <p>I currently have no work experience in the games industry.</p>
+    <h3 style="color: rebeccapurple">
+    Work Experience
+    </h3>
+
+    <p>
+    I currently have no work experience in the games industry.
+    </p>
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
 
-    <h1 style="color: Fuchsia">Portfolio</h1>
+    <h1 style="color: Fuchsia">
+    Portfolio
+    </h1>
 
-    <div id="myBtnContainer" style="margin-left: 595px;">
-        <button class="btn active" onclick="filterSelection('all')"> All</button>
+    <div id="myBtnContainer" style="margin-left: 575px;">
+        <button class="btn active" onclick="filterSelection('all')"> Show All</button>
         <button class="btn" onclick="filterSelection('education')"> Education</button>
         <button class="btn" onclick="filterSelection('gameJam')"> Game Jam</button>
         <button class="btn" onclick="filterSelection('personal')"> Personal</button>
     </div>
 
-    <div class="container">
-        <div class="filterDiv gameJam"><image src="/images/slingingSlimesThumbnail.jpg" width="240" height="340" alt="Slinging Slimes Game Thumbnail"></image></div>
-        <div class="filterDiv education"><image src="/images/deepDungeonsThumbnail.jpg" width="240" height="340" alt="Deep Dungeons Game Thumbnail"></image></div>
-        <div class="filterDiv education"><image src="/images/pogoKingThumbnail.jpg" width="240" height="340" alt="Pogo King Game Thumbnail"></image></div>
+    <div class="container" style ="padding: 1rem; display: grid; grid-template-columns: repeat(7, 240px); grid-gap: 5px; margin-left: 70px;">
+        <div class="filterDiv gameJam">
+            <a href="slingingSlimes.html">
+                <image src="/images/slingingSlimesThumbnail.jpg" width="240" height="340" alt="Slinging Slimes Game Thumbnail"></image>
+            </a>
+        </div>
+
+        <div class="filterDiv education">
+            <a href="deepDungeons.html">
+                <image src="/images/deepDungeonsThumbnail.jpg" width="240" height="340" alt="Deep Dungeons Game Thumbnail"></image>
+            </a>
+        </div>
+
+        <div class="filterDiv education">
+            <a href="pogoKing.html">
+                <image src="/images/pogoKingThumbnail.jpg" width="240" height="340" alt="Pogo King Game Thumbnail"></image>
+            </a>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
@@ -85,40 +129,41 @@
 
     <footer>
 
-        <h1 style="text-align: center;">Contacts</h1>
+        <h1 style="text-align: center;">
+        Contacts
+        </h1>
 
-        <p style="text-align: center;"> If you have any interest in contacting me? </p>
+        <p style="text-align: center;">
+        If you have any interest in contacting me? 
+        </p>
 
-        <a href="mailto:CaiMills111@outlook.com" style="font-size: 24px">Reach out via email - CaiMills111@outlook.com</a>
+        <a href="mailto:CaiMills111@outlook.com" style="font-size: 24px">
+        Reach out via email - CaiMills111@outlook.com
+        </a>
 
-        <p>Or contact me via social media;</p>
+        <p>
+        Or contact me via social media;
+        </p>
 
-        <ul style="border: none; position: static; margin-left: 675px;">
+        <ul style="border: none; position: static; margin-left: 750px;">
             <li style="border: none; position: static;">
-                <a href="https://x.com/epic_cai">
+                <a href="https://x.com/CaiMills">
                     <image src="/images/x.png" width="80" height="80" alt="X"></image>
                 </a>
             </li>
             <li style="border: none; position: static;">
-                <a href="instagram.asp">
+                <a href="https://www.instagram.com/cai_mills/">
                     <image src="/images/instagram.png" width="80" height="80" alt="Instagram"></image>
                 </a>
             </li>
             <li style="border: none; position: static;">
-                <a href="https://www.youtube.com/channel/UCl9wkqcFLizilnqU9lJ1rKQ">
-                    <image src="/images/youtube.png" width="103" height="80" alt="Youtube"></image>
-                </a>
-            </li>
-            <li style="border: none; position: static;">
-                <a href="linkedin.asp">
+                <a href="https://uk.linkedin.com/in/cai-mills-a31806241">
                     <image src="/images/linkedin.png" width="80" height="80" alt="LinkedIn"></image>
                 </a>
             </li>
         </ul>
 
     </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
