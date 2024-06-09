@@ -122,8 +122,14 @@ footer
         background-color: purple;
     }
 
+    .btn:focus 
+    {
+        background-color: Fuchsia;
+        font-weight: bold;
+    }
+
     /* Add a dark background to the active button */
-    .btn.active 
+    .btn:active 
     {
         background-color: Fuchsia;
     }
