@@ -1,20 +1,20 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" charset="UTF-8" />
     <title>Cai Mills: Portfolio</title>
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
     <ul>
         <li>
-            <a href="index.html">Home</a>
+            <a href="index.html" style="font-family: Arial Black;">Home</a>
         </li>
         <li>
-            <a class="active" href="portfolio.html">Portfolio</a>
+            <a class="active" href="portfolio.html" style="font-family: Arial Black;">Portfolio</a>
         </li>
         <li>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" style="font-family: Arial Black;">Contact</a>
         </li>
 
         <li style="float:right">
@@ -44,12 +44,18 @@
         </li>
     </ul>
 
-    <h1 style="color: Fuchsia">
+    <h1 style=" color: white; background-color: fuchsia; font-size: 40px; text-align: center; font-family: Arial Black; padding: 20px;">
         Portfolio
     </h1>
 
-    <p>
-        Click on the games below for more details
+    <p style="text-align: center; word-wrap: normal; width: 1850px; font-family: Arial Black;">
+        Click on the projects below to see more details;
+    </p>
+
+    <p style="text-align: center; word-wrap: normal; width: 1850px; font-family: Arial Black;"> 
+        <i>
+        (Projects are Ordered newest to Oldest)
+        </i>
     </p>
 
     <div id="myBtnContainer" style="margin-left: 575px;">
@@ -60,9 +66,9 @@
     </div>
 
     <div class="container" style="padding: 1rem; display: grid; grid-template-columns: repeat(7, 240px); grid-gap: 5px; margin-left: 70px;">
-        <div class="filterDiv gameJam">
-            <a href="slingingSlimes.html">
-                <image src="/images/slingingSlimesThumbnail.jpg" width="240" height="340" alt="Slinging Slimes Game Thumbnail"></image>
+        <div class="filterDiv education">
+            <a href="pogoKing.html">
+                <image src="/images/pogoKingThumbnail.jpg" width="240" height="340" alt="Pogo King Game Thumbnail"></image>
             </a>
         </div>
 
@@ -72,11 +78,12 @@
             </a>
         </div>
 
-        <div class="filterDiv education">
-            <a href="pogoKing.html">
-                <image src="/images/pogoKingThumbnail.jpg" width="240" height="340" alt="Pogo King Game Thumbnail"></image>
+        <div class="filterDiv gameJam">
+            <a href="slingingSlimes.html">
+                <image src="/images/slingingSlimesThumbnail.jpg" width="240" height="340" alt="Slinging Slimes Game Thumbnail"></image>
             </a>
         </div>
+
     </div>
 
     <script src="script.js"></script>

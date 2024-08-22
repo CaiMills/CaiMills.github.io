@@ -1,6 +1,14 @@
-﻿body 
-{
+﻿html, body {
     background-color: black;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+.modal 
+{
+    width: 50vw;
+    height: 50vh;
+    height: calc(var(--vh, 1vh) * 50);
 }
 
 ul 
@@ -22,12 +30,11 @@ li
     border-right: 4px solid #bbb;
 }
 
-    li a 
-    {
+    li a {
         display: block;
         color: white;
         font-size: 30px;
-        font-family: 'Comic Sans MS';
+        font-family: Arial Black;
         text-align: center;
         padding: 14px 20px;
         text-decoration: none;
@@ -45,32 +52,35 @@ li
     background-color: Fuchsia;
 }
 
-h1 
-{
+h1 {
     color: white;
     font-size: 60px;
-    font-family: 'Comic Sans MS';
+    font-family: Arial Black;
 }
 
-h3 
-{
+h2 {
+    color: white;
+    background-color: rebeccapurple;
+    text-align: center;
+    font-family: Arial Black;
+}
+
+h3 {
     color: white;
     font-size: 40px;
-    font-family: 'Comic Sans MS'
+    font-family: Arial Black;
 }
 
-p 
-{
+p {
     color: white;
     font-size: 24px;
-    font-family: 'Comic Sans MS';
+    font-family: Arial Black;
 }
 
-pre 
-{
+pre {
     color: white;
     font-size: 24px;
-    font-family: 'Comic Sans MS';
+    font-family: Arial Black;
 }
 
 footer 
@@ -87,13 +97,12 @@ footer
     overflow: hidden;
 }
 
-.filterDiv 
-{
+.filterDiv {
     color: black;
     margin: 2px;
     text-align: center;
     font-size: 24px;
-    font-family: 'Comic Sans MS';
+    font-family: Arial Black;
     display: none; /* Hidden by default */
 }
 
@@ -104,8 +113,7 @@ footer
 }
 
 /* Style the buttons */
-.btn 
-{
+.btn {
     border: 4px solid #bbb;
     outline: none;
     padding: 14px 20px;
@@ -113,7 +121,7 @@ footer
     cursor: pointer;
     color: white;
     font-size: 30px;
-    font-family: 'Comic Sans MS';
+    font-family: Arial Black;
 }
 
     /* Add a light grey background on mouse-over */
