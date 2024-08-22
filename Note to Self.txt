@@ -1,2 +1,5 @@
 Remember that the directory to edit this is 
 C:\Users\CaiMi\Documents\My Web Sites\Github Portfolio Site
+
+And put localhost_63328 in
+C:\Users\CaiMi\source\repos
