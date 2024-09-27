@@ -1,4 +1,9 @@
-﻿html, body {
+﻿@font-face {
+    font-family: ARCO;
+    src: url('/fonts/ARCO.ttf');
+}
+
+html, body {
     background-color: black;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
@@ -11,16 +16,15 @@
     height: calc(var(--vh, 1vh) * 50);
 }
 
-ul 
-{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     border: 4px solid #bbb;
     overflow: hidden;
-    background-color: rebeccapurple;
     position: -webkit-sticky;
     position: sticky;
+    font-family: ARCO;
     top: 0;
 }
 
@@ -33,8 +37,8 @@ li
     li a {
         display: block;
         color: white;
-        font-size: 30px;
-        font-family: Arial Black;
+        font-size: 37px;
+        font-family: ARCO;
         text-align: center;
         padding: 14px 20px;
         text-decoration: none;
@@ -60,7 +64,7 @@ h1 {
 
 h2 {
     color: white;
-    background-color: rebeccapurple;
+    background-color: #620380;
     text-align: center;
     font-family: Arial Black;
 }
@@ -117,11 +121,11 @@ footer
     border: 4px solid #bbb;
     outline: none;
     padding: 14px 20px;
-    background-color: rebeccapurple;
+    background-color: #620380;
     cursor: pointer;
     color: white;
     font-size: 30px;
-    font-family: Arial Black;
+    font-family: ARCO;
 }
 
     /* Add a light grey background on mouse-over */
@@ -141,3 +145,14 @@ footer
     {
         background-color: Fuchsia;
     }
+
+section-title {
+    color: white;
+    background-color: fuchsia;
+    font-size: 40px;
+    text-align: center;
+    font-family: ARCO;
+    padding: 20px;
+    margin: auto;
+    display: block;
+}
