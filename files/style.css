@@ -18,14 +18,11 @@ html, body {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     border: 4px solid #bbb;
     overflow: hidden;
     position: -webkit-sticky;
     position: sticky;
     font-family: ARCO;
-    top: 0;
 }
 
 li 
@@ -105,6 +102,7 @@ footer
     color: black;
     margin: 2px;
     text-align: center;
+    vertical-align: middle;
     font-size: 24px;
     font-family: Arial Black;
     display: none; /* Hidden by default */
@@ -150,6 +148,7 @@ section-title {
     color: white;
     background-color: fuchsia;
     font-size: 40px;
+    vertical-align: middle;
     text-align: center;
     font-family: ARCO;
     padding: 20px;
