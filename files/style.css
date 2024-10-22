@@ -28,6 +28,18 @@ ul {
     background-color: #620380;
 }
 
+al {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 4px solid #bbb;
+    overflow: hidden;
+
+    font-family: ARCO;
+    top: 0;
+    background-color: #620380;
+}
+
 li {
     float: inline-start;
     border-right: 4px solid #bbb;
@@ -74,6 +86,14 @@ li a:hover {
         width: 50px;
         height: auto;
         
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    al {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
