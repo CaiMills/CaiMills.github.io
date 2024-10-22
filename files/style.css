@@ -140,124 +140,75 @@ footer
     padding: 10px;
 }
 
-.container {
-    width: 100%;
-    overflow: hidden;
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container {
     padding: 10px;
+    margin: auto;
+    max-width: 1000px; 
 }
 
-.filter-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px auto;
-}
 
-.filterDiv {
-    margin: 10px;
-    text-align: center;
-    flex: 1 1 calc(25% - 20px);
-    max-width: calc(25% - 20px);
-}
 
-.image-container {
-    max-width: 100%;
+@media only screen and (max-width: 700px) {
+    .image-container {
+        padding: 5px;
+        max-width: 100%; 
+    }
+}
+.container 
+{
     overflow: hidden;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-@media only screen and (max-width: 1024px) {
-    .filterDiv {
-        flex: 1 1 calc(33.333% - 20px);
-        max-width: calc(33.333% - 20px);
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .filterDiv {
-        flex: 1 1 calc(50% - 20px);
-        max-width: calc(50% - 20px);
-    }
-}
-
-.filter-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px auto;
-}
-
 .filterDiv {
-    margin: 10px;
+    color: black;
+    margin: 2px;
     text-align: center;
-    flex: 1 1 200px;
-    max-width: 240px;
+    font-size: 24px;
+    font-family: Arial Black;
+    display: none; /* Hidden by default */
 }
 
-.image-container {
-    max-width: 100%;
-    overflow: hidden;
-}
-
-img {
-    width: 100%;
-    height: auto;
+/* The "show" class is added to the filtered elements */
+.show 
+{
     display: block;
-    max-width: 240px;
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-}
-
-@media only screen and (max-width: 1024px) {
-    .filterDiv {
-        flex: 1 1 150px;
-        max-width: 200px;
-    }
-
-    img {
-        max-width: 200px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .filterDiv {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
+/* Style the buttons */
 .btn {
     border: 4px solid #bbb;
     outline: none;
     padding: 14px 20px;
     background-color: #620380;
-    text-align: center;
     cursor: pointer;
     color: white;
     font-size: 30px;
-    font-family: "ARCO";
-    width: auto;
+    font-family: ARCO;
 }
+
+    /* Add a light grey background on mouse-over */
+    .btn:hover 
+    {
+        background-color: purple;
+    }
+
+    .btn:focus 
+    {
+        background-color: Fuchsia;
+        font-weight: bold;
+    }
+
+    /* Add a dark background to the active button */
+    .btn:active 
+    {
+        background-color: Fuchsia;
+    }
 
 section-title {
     color: white;
@@ -269,19 +220,3 @@ section-title {
     margin: auto;
     display: block;
 }
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-.image-container {
-    padding: 10px;
-    margin: auto;
-    max-width: 1200px; 
-}
-@media only screen and (max-width: 600px) {
-    .image-container {
-        padding: 5px;
-        max-width: 100%; 
-    }}
