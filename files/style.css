@@ -18,45 +18,70 @@ html, body {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     border: 4px solid #bbb;
     overflow: hidden;
-    position: -webkit-sticky;
-    position: sticky;
+
     font-family: ARCO;
+    top: 0;
+    background-color: #620380;
 }
 
-li 
-{
+li {
     float: inline-start;
     border-right: 4px solid #bbb;
 }
 
-    li a {
-        display: block;
-        color: white;
-        font-size: 37px;
-        font-family: ARCO;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
+li a {
+    display: block;
+    color: white;
+    font-size: 37px;
+    font-family: ARCO;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: purple;
+}
+
+.active {
+    background-color: Fuchsia;
+}
+
+@media only screen and (max-width: 803px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-        /* Change the link color to #111 (black) on hover */
-        li a:hover 
-        {
-            background-color: purple;
-        }
+    li {
+        float: none;
+        width: 100%;
+        border-right: none;
+        text-align: center;
+        margin: 5px 0;
+    }
 
+    li a {
+        font-size: 24px;
+    }
 
-.active 
-{
-    background-color: Fuchsia;
+    li img {
+        width: 50px;
+        height: auto;
+        
+    }
 }
 
 h1 {
     color: white;
     font-size: 60px;
     font-family: Arial Black;
+    width:auto;
 }
 
 h2 {
@@ -64,12 +89,14 @@ h2 {
     background-color: #620380;
     text-align: center;
     font-family: Arial Black;
+    width:auto;
 }
 
 h3 {
     color: white;
     font-size: 40px;
     font-family: Arial Black;
+    width:auto;
 }
 
 p {
@@ -93,65 +120,148 @@ footer
     padding: 10px;
 }
 
-.container 
-{
+.container {
+    width: 100%;
     overflow: hidden;
+    padding: 10px;
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
 }
 
 .filterDiv {
-    color: black;
-    margin: 2px;
+    margin: 10px;
     text-align: center;
-    vertical-align: middle;
-    font-size: 24px;
-    font-family: Arial Black;
-    display: none; /* Hidden by default */
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
 }
 
-/* The "show" class is added to the filtered elements */
-.show 
-{
+.image-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
     display: block;
 }
 
-/* Style the buttons */
+@media only screen and (max-width: 1024px) {
+    .filterDiv {
+        flex: 1 1 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .filterDiv {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.filterDiv {
+    margin: 10px;
+    text-align: center;
+    flex: 1 1 200px;
+    max-width: 240px;
+}
+
+.image-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 240px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .filterDiv {
+        flex: 1 1 150px;
+        max-width: 200px;
+    }
+
+    img {
+        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .filterDiv {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 .btn {
     border: 4px solid #bbb;
     outline: none;
     padding: 14px 20px;
     background-color: #620380;
+    text-align: center;
     cursor: pointer;
     color: white;
     font-size: 30px;
-    font-family: ARCO;
+    font-family: "ARCO";
+    width: auto;
 }
-
-    /* Add a light grey background on mouse-over */
-    .btn:hover 
-    {
-        background-color: purple;
-    }
-
-    .btn:focus 
-    {
-        background-color: Fuchsia;
-        font-weight: bold;
-    }
-
-    /* Add a dark background to the active button */
-    .btn:active 
-    {
-        background-color: Fuchsia;
-    }
 
 section-title {
     color: white;
     background-color: fuchsia;
     font-size: 40px;
-    vertical-align: middle;
     text-align: center;
     font-family: ARCO;
     padding: 20px;
     margin: auto;
     display: block;
 }
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.image-container {
+    padding: 10px;
+    margin: auto;
+    max-width: 1200px; 
+}
+@media only screen and (max-width: 600px) {
+    .image-container {
+        padding: 5px;
+        max-width: 100%; 
+    }}

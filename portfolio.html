@@ -20,86 +20,22 @@
           rel="stylesheet" />
 </head>
 <body>
-    <ul style="
-         background-color: #620380;">
-        <li>
-            <a href="index.html">
-                Home
-            </a>
-        </li>
+    <body>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="active" href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="CV.html">CV</a>
+            </li>
 
-        <li>
-            <a class="active"
-               href="portfolio.html">
-                Portfolio
-            </a>
-        </li>
-
-        <li>
-            <a href="contact.html">
-                Contact
-            </a>
-        </li>
-
-        <li>
-            <a href="CV.html">
-                CV
-            </a>
-        </li>
-
-        <li style="
-            float:right">
-            <a href="https://uk.linkedin.com/in/cai-mills-a31806241">
-                <image src="/images/linkedin.png"
-                       width="33"
-                       height="33"
-                       alt="LinkedIn">
-                </image>
-            </a>
-        </li>
-
-        <li style="
-            float:right">
-            <a href="https://github.com/CaiMills">
-                <image src="/images/github.png"
-                       width="33"
-                       height="33"
-                       alt="Github">
-                </image>
-            </a>
-        </li>
-        <li style="
-            float:right">
-            <a href="https://www.youtube.com/@caimills6565">
-                <image src="/images/youtube.png"
-                       width="53"
-                       height="33"
-                       alt="Youtube"></image>
-            </a>
-        </li>
-        <li style="
-            float:right">
-            <a href="https://www.instagram.com/cai_mills/">
-                <image src="/images/instagram.png"
-                       width="33"
-                       height="33"
-                       alt="Instagram">
-                </image>
-            </a>
-        </li>
-        <li style="
-            float: right;
-            border-left: 4px solid #bbb;">
-            <a href="https://x.com/CaiMills">
-                <image src="/images/x.png"
-                       width="33"
-                       height="33"
-                       alt="X">
-                </image>
-            </a>
-        </li>
-    </ul>
-
+        </ul>
     <section-title style="
         margin-top: 20px;">
         Portfolio
@@ -126,70 +62,63 @@
 
 
     <div id="myBtnContainer"
-         style="
-            margin: auto;
-            display: flex;
-            justify-content: center;">
-        <button class="btn active"
-                onclick="filterSelection('all')">
-            Show All
-        </button>
+    style="
+       margin: auto;
+       display: flex;
+       justify-content: center;
+       width: auto;">
+   <button class="btn active"
+           onclick="filterSelection('all')">
+       Show All
+   </button>
 
-        <button class="btn"
-                onclick="filterSelection('education')">
-            Education
-        </button>
+   <button class="btn"
+           onclick="filterSelection('education')">
+       Education
+   </button>
 
-        <button class="btn"
-                onclick="filterSelection('gameJam')">
-            Game Jam
-        </button>
+   <button class="btn"
+           onclick="filterSelection('gameJam')">
+       Game Jam
+   </button>
 
-        <button class="btn"
-                onclick="filterSelection('personal')">
-            Personal
-        </button>
+   <button class="btn"
+           onclick="filterSelection('personal')">
+       Personal
+   </button>
+</div>
+
+<div class="container"
+    style="
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(7, 240px);
+        grid-gap: 5px;
+        margin-left: 5px;
+        width: auto;">
+
+<div class="filter-container">
+    <div class="filterDiv education">
+        <div class="image-container">
+            <img src="/images/pogoKingThumbnail.jpg" alt="Portfolio Image">
+        </div>
     </div>
 
-    <div class="container"
-         style="
-         padding: 1rem;
-         display: grid;
-         grid-template-columns: repeat(7, 240px);
-         grid-gap: 5px;
-         margin-left: 70px;">
-
-        <div class="filterDiv education">
-            <a href="pogoKing.html">
-                <image src="/images/pogoKingThumbnail.jpg"
-                       width="240"
-                       height="340"
-                       alt="Pogo King Game Thumbnail">
-                </image>
-            </a>
+    <div class="filterDiv education">
+        <div class="image-container">
+            <img src="/images/deepDungeonsThumbnail.jpg" alt="Deep Dungeons Game Thumbnail">
         </div>
-
-        <div class="filterDiv education">
-            <a href="deepDungeons.html">
-                <image src="/images/deepDungeonsThumbnail.jpg"
-                       width="240"
-                       height="340"
-                       alt="Deep Dungeons Game Thumbnail">
-                </image>
-            </a>
-        </div>
-
-        <div class="filterDiv gameJam">
-            <a href="slingingSlimes.html">
-                <image src="/images/slingingSlimesThumbnail.jpg"
-                       width="240"
-                       height="340"
-                       alt="Slinging Slimes Game Thumbnail">
-                </image>
-            </a>
-        </div>
-
     </div>
+
+    <div class="filterDiv gameJam">
+        <div class="image-container">
+            <img src="/images/slingingSlimesThumbnail.jpg" alt="Slinging Slimes Game Thumbnail">
+        </div>
+    </div>
+</div>
+
+
+</div>
 
     <script src="script.js">
     </script>

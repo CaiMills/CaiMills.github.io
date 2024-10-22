@@ -9,7 +9,7 @@
     </style>
 
     <meta name="viewport"
-          content="width=device-width, height=device-height, initial-scale=1"
+          content="width=device-width, height=device-height, initial-scale=2"
           charset="UTF-8" />
 
     <title>
@@ -20,85 +20,31 @@
           rel="stylesheet" />
 </head>
 <body>
-    <ul style="
-         background-color: #620380;">
-        <li>
-            <a class="active"
-               href="index.html">
-                Home
-            </a>
-        </li>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Navigation</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <ul>
+            <li>
+                <a class="active" href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="CV.html">CV</a>
+            </li>
 
-        <li>
-            <a href="portfolio.html">
-                Portfolio
-            </a>
-        </li>
-
-        <li>
-            <a href="contact.html">
-                Contact
-            </a>
-        </li>
-
-        <li>
-            <a href="CV.html">
-                CV
-            </a>
-        </li>
-
-        <li style="
-            float:right">
-            <a href="https://uk.linkedin.com/in/cai-mills-a31806241">
-                <image src="/images/linkedin.png"
-                       width="33"
-                       height="33"
-                       alt="LinkedIn">
-                </image>
-            </a>
-        </li>
-
-        <li style="
-            float:right">
-            <a href="https://github.com/CaiMills">
-                <image src="/images/github.png"
-                       width="33"
-                       height="33"
-                       alt="Github">
-                </image>
-            </a>
-        </li>
-        <li style="
-            float:right">
-            <a href="https://www.youtube.com/@caimills6565">
-                <image src="/images/youtube.png"
-                       width="53"
-                       height="33"
-                       alt="Youtube"></image>
-            </a>
-        </li>
-        <li style="
-            float:right">
-            <a href="https://www.instagram.com/cai_mills/">
-                <image src="/images/instagram.png"
-                       width="33"
-                       height="33"
-                       alt="Instagram">
-                </image>
-            </a>
-        </li>
-        <li style="
-            float: right;
-            border-left: 4px solid #bbb;">
-            <a href="https://x.com/CaiMills">
-                <image src="/images/x.png"
-                       width="33"
-                       height="33"
-                       alt="X">
-                </image>
-            </a>
-        </li>
-    </ul>
+        </ul>
+    </body>
 
     <h1 style="
          text-align: center;
@@ -122,37 +68,37 @@
         About Me
     </section-title>
 
-    <image src="/images/pictureOfMe.jpg"
-           style="
-           padding-right: 20px;
-           position: static;
-           float: right;"
-           width="850" ;
-           height="600"
-           alt="Picture of Me: Cai Mills">
-    </image>
+    <div class="image-container">
+        <img src="/images/pictureOfMe.jpg" alt="Portfolio Image">
+    </div>
 
     <p style="
-        padding-left: 80px;
+        vertical-align: middle;
         word-wrap: break-word;
-        width: 900px;
-        font-family: Arial Black;">
+        font-family: Arial Black;
+        padding-top: 10px;
+        padding-left: 10px;
+        width: auto;">
         I am highly motivated student who's always open to learn and strives to improve. Currently studying Computer Games Programming at Staffordshire University, Stoke-on-Trent Campus. I have experience with multiple programming languages, with my preferred language of choice being C++ or C#.
     </p>
 
     <p style="
-        padding-left: 80px;
+        vertical-align: middle;
         word-wrap: break-word;
-        width: 900px;
-        font-family: Arial Black;">
+        font-family: Arial Black;
+        padding-top: 10px;
+        padding-left: 10px;
+        width: auto;">
         I have the most experience with Unity in my personal projects, but have recently made the switch to learn Godot, using primarily C# but some GDScript when needed. I'm a team player who's dedicated to professional and personal improvement.
     </p>
 
     <p style="
-        padding-left: 80px;
+        vertical-align: middle;
         word-wrap: break-word;
-        width: 900px;
-        font-family: Arial Black;">
+        font-family: Arial Black;
+        padding-top: 10px;
+        padding-left: 10px;
+        width: auto;">
         Throughout my education I have managed to achieve I am proud of what I have achieved through my education, ensuring to go the extra mile and demonstrate my best work. I’m a passionate worker, eager to learn from and help those around me, striving to perform to the best of my ability. I also have experience with working with others, as I have done game jams in teams as the team’s programmer.
     </p>
 
@@ -165,7 +111,7 @@
                 text-align: center;
                 margin: auto;
                 width: 350px;
-                height="100%"
+                height: "100%"
                 class="btn">
             Download CV
         </button>
@@ -257,73 +203,69 @@
             (Projects are Ordered newest to Oldest)
         </i>
     </p>
-
-
     <div id="myBtnContainer"
-         style="
-            margin: auto;
-            display: flex;
-            justify-content: center;">
-        <button class="btn active"
-                onclick="filterSelection('all')">
-            Show All
-        </button>
+    style="
+       margin: auto;
+       display: flex;
+       justify-content: center;
+       width: auto;">
+   <button class="btn active"
+           onclick="filterSelection('all')">
+       Show All
+   </button>
 
-        <button class="btn"
-                onclick="filterSelection('education')">
-            Education
-        </button>
+   <button class="btn"
+           onclick="filterSelection('education')">
+       Education
+   </button>
 
-        <button class="btn"
-                onclick="filterSelection('gameJam')">
-            Game Jam
-        </button>
+   <button class="btn"
+           onclick="filterSelection('gameJam')">
+       Game Jam
+   </button>
 
-        <button class="btn"
-                onclick="filterSelection('personal')">
-            Personal
-        </button>
-    </div>
+   <button class="btn"
+           onclick="filterSelection('personal')">
+       Personal
+   </button>
+</div>
 
-    <div class="container"
-         style="
-             padding: 1rem;
-             display: grid;
-             grid-template-columns: repeat(7, 240px);
-             grid-gap: 5px;
-             margin-left: 70px;">
+<div class="container"
+    style="
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(7, 240px);
+        grid-gap: 5px;
+        margin-left: 5px;
+        width: auto;">
 
-        <div class="filterDiv education">
-            <a href="pogoKing.html">
-                <image src="/images/pogoKingThumbnail.jpg"
-                       width="240"
-                       height="340"
-                       alt="Pogo King Game Thumbnail">
-                </image>
-            </a>
-        </div>
+   <div class="filterDiv education">
+       <div class="image-container">
+           <img src="/images/pogoKingThumbnail.jpg" alt="Portfolio Image">
+       </div>
+   </div>
 
-        <div class="filterDiv education">
-            <a href="deepDungeons.html">
-                <image src="/images/deepDungeonsThumbnail.jpg"
-                       width="240"
-                       height="340"
-                       alt="Deep Dungeons Game Thumbnail">
-                </image>
-            </a>
-        </div>
+   <div class="filterDiv education">
+       <a href="deepDungeons.html">
+           <image src="/images/deepDungeonsThumbnail.jpg"
+                  width="240"
+                  height="340"
+                  alt="Deep Dungeons Game Thumbnail">
+           </image>
+       </a>
+   </div>
 
-        <div class="filterDiv gameJam">
-            <a href="slingingSlimes.html">
-                <image src="/images/slingingSlimesThumbnail.jpg"
-                       width="240"
-                       height="340"
-                       alt="Slinging Slimes Game Thumbnail">
-                </image>
-            </a>
-        </div>
+   <div class="filterDiv gameJam">
+       <a href="slingingSlimes.html">
+           <image src="/images/slingingSlimesThumbnail.jpg"
+                  width="240"
+                  height="340"
+                  alt="Slinging Slimes Game Thumbnail">
+           </image>
+       </a>
+   </div>
 
-    </div>
+</div>
 
     <script src="script.js">
     </script>
@@ -336,10 +278,11 @@
 
         <h1 style="
         color: white;
-        font-size: 80px;
+        font-size: 60px;
         text-align: center;
         vertical-align: middle;
-        font-family: ARCO;">
+        font-family: ARCO;
+        width: auto;">
             Contacts
         </h1>
 
@@ -372,6 +315,7 @@
         <ul style="
         border: none;
         position: static;
+        background-color: rebeccapurple;
         margin: auto;
         display: flex;
         justify-content: center;
@@ -382,8 +326,6 @@
             position: static;">
                 <a href="https://x.com/CaiMills">
                     <image src="/images/x.png"
-                           width="80"
-                           height="80"
                            alt="X">
                     </image>
                 </a>
@@ -394,8 +336,6 @@
             position: static;">
                 <a href="https://www.instagram.com/cai_mills/">
                     <image src="/images/instagram.png"
-                           width="80"
-                           height="80"
                            alt="Instagram">
                     </image>
                 </a>
@@ -406,9 +346,27 @@
             position: static;">
                 <a href="https://uk.linkedin.com/in/cai-mills-a31806241">
                     <image src="/images/linkedin.png"
-                           width="80"
-                           height="80"
                            alt="LinkedIn">
+                    </image>
+                </a>
+            </li>
+            <li style="
+            border: none;
+            background-color: rebeccapurple;
+            position: static;">
+                <a href="https://github.com/CaiMills">
+                    <image src="/images/github.png"
+                           alt="Github">
+                    </image>
+                </a>
+            </li>
+            <li style="
+            border: none;
+            background-color: rebeccapurple;
+            position: static;">
+                <a href="https://www.youtube.com/@caimills6565">
+                    <image src="/images/youtube.png"
+                           alt="Youtube">
                     </image>
                 </a>
             </li>
