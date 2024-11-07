@@ -69,105 +69,86 @@
     </section-title>
 
     <div class="image-container">
-        <img src="/images/pictureOfMe30.jpg"
+        <img src="/images/pictureOfMe.jpg"
         style="
-        display: flex;
-        justify-content: center";
-        alt="Portfolio Image">
+        width: 600px;
+        height: 400px;
+        display: block;
+        margin: auto;";
+        alt="Picture of Me - Cai Mills">
     </div>
 
-    <p style="
-        vertical-align: middle;
-        word-wrap: break-word;
-        font-family: Arial Black;
-        padding-top: 10px;
-        padding-left: 10px;
-        width: auto;">
-        I am highly motivated student who's always open to learn and strives to improve. Currently studying Computer Games Programming at Staffordshire University, Stoke-on-Trent Campus. I have experience with multiple programming languages, with my preferred language of choice being C++ or C#.
-    </p>
-
-    <p style="
-        vertical-align: middle;
-        word-wrap: break-word;
-        font-family: Arial Black;
-        padding-top: 10px;
-        padding-left: 10px;
-        width: auto;">
-        I have the most experience with Unity in my personal projects, but have recently made the switch to learn Godot, using primarily C# but some GDScript when needed. I'm a team player who's dedicated to professional and personal improvement.
-    </p>
-
-    <p style="
-        vertical-align: middle;
-        word-wrap: break-word;
-        font-family: Arial Black;
-        padding-top: 10px;
-        padding-left: 10px;
-        width: auto;">
-        Throughout my education I have managed to achieve I am proud of what I have achieved through my education, ensuring to go the extra mile and demonstrate my best work. I’m a passionate worker, eager to learn from and help those around me, striving to perform to the best of my ability. I also have experience with working with others, as I have done game jams in teams as the team’s programmer.
-    </p>
-
-    <p>&nbsp;</p>
-
     <a href="/files/Cai Mills CV.pdf"
-       download="Cai Mills CV">
-        <button style="
-                display: block;
-                text-align: center;
-                margin: auto;
-                width: 350px;
-                height: "100%"
-                class="btn">
-            Download CV
-        </button>
-    </a>
+    download="Cai Mills CV">
+     <button style="
+             display: block;
+             text-align: center;
+             margin: auto;
+             width: 350px;
+             height: "100px"
+             class="btn">
+         Download CV
+     </button>
+ </a>
+
+ <p></p>
+
+    <p style="
+        margin: auto;
+        font-family: Arial Black;
+        width: 1400px;">
+        I am an enthusiastic learner who is always eager to absorb new knowledge and seeks to advance my skills. 
+        I possess proficiency in various programming languages, with a particular affinity for C++ and C#. My primary experience lies in Unity for my personal endeavours, 
+        but I have recently transitioned to exploring Godot, as I favour open-source solutions, primarily utilizing C# in my projects along with some GDScript when necessary. 
+        
+    </p>
+
+    <p></p>
+
+    <p style="
+        margin: auto;
+        font-family: Arial Black;
+        width: 1400px;">
+        I'm a collaborative individual committed to both professional growth and personal development, 
+        whether it's by refining my existing skills or broadening my understanding with innovative tools and programming languages. I possess experience in teamwork, 
+        having participated in game jams as the programmer for my team, utilizing platforms like Trello and Notion to effectively communicate with my colleagues. 
+        Throughout my academic journey, I take pride in my accomplishments, always going above and beyond to showcase my finest work. I'm an enthusiastic worker, 
+        consistently keen to learn from and support those around me, striving to achieve my utmost potential. 
+    </p>
+
+    <p></p>
 
     <section-title style="
         margin-top: 10px;">
         Education
     </section-title>
 
-    <p style="
-        font-family: Arial Black;
-        color: red;
-        text-align: center;
-        vertical-align: middle;
-        word-wrap: normal;">
-        University of Staffordshire: 2023 - Present
-    </p>
-
-    <p style="
-        font-family: Arial Black;
-        color: yellow;
-        text-align: center;
-        vertical-align: middle;
-        word-wrap: normal;">
-        Course - Computer Games Programming
-    </p>
-
-    <p style="
+    <pre style="
         font-family: Arial Black;
         text-align: center;
         vertical-align: middle;
         word-wrap: normal;">
-        Experienced in using;
-    </p>
+<span style="color: red;">University of Staffordshire:</span> 	 	                            <span style="color: yellow;">Dates from 2023 - 2026</span>  
+Computer Games Programming - BSc (Hons) - Currently Year 2 
 
-    <p style="
-        text-align: left;
-        vertical-align: middle;
-        word-wrap: break-word;
-        font-family: Arial Black;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        padding-top: 20px;
-        padding-bottom: 20px">
-        • C++&ensp; &ensp; &emsp; &emsp; • SDL2<br />
-        • C#&emsp; &emsp; &emsp; &emsp;• HTML<br />
-        • Unity&ensp; &ensp; &ensp; &emsp;• OpenGL<br />
-        • Unreal 5&ensp; &ensp;  • Git<br />
-        • Godot&emsp; &ensp; &ensp; • Aseprite<br />
-    </p>
+<span style="color: red;">Gower College Swansea:</span>    					    <span style="color: yellow;">Dates from 2021 - 2023</span>  
+Person BTEC Extended Diploma in Information and Creative Technology
+<span style="color: #0eeadf;">Grade: D*D*D </span>
+    </pre>
+
+    <section-title>
+        Skills
+    </section-title>
+
+    <pre style="
+    font-family: Arial Black;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: normal;">
+Programming Languages: C++, C#, HTML, GDScript 
+Game Engines: Godot, Unity, Unreal Engine 5, SDL, MonoGame 
+Other Tools: Git, DirectX11, OpenGL, Microsoft Office
+</pre>
 
     <section-title>
         Work Experience
@@ -219,18 +200,13 @@
    </button>
 
    <button class="btn"
-           onclick="filterSelection('education')">
-       Education
+           onclick="filterSelection('games')">
+       Game Projects
    </button>
 
    <button class="btn"
            onclick="filterSelection('gameJam')">
        Game Jam
-   </button>
-
-   <button class="btn"
-           onclick="filterSelection('personal')">
-       Personal
    </button>
 </div>
 
@@ -243,7 +219,7 @@
         margin-left: 5px;
         width: auto;">
 
-<div class="filterDiv education">
+<div class="filterDiv games">
     <a href="pogoKing.html">
          <image src="/images/pogoKingThumbnail.jpg"
                width="240"
@@ -253,7 +229,7 @@
      </a>
 </div>
 
-   <div class="filterDiv education">
+   <div class="filterDiv games">
        <a href="deepDungeons.html">
            <image src="/images/deepDungeonsThumbnail.jpg"
                   width="240"
@@ -263,7 +239,7 @@
        </a>
    </div>
 
-   <div class="filterDiv gameJam">
+   <div class="filterDiv gameJam games">
        <a href="slingingSlimes.html">
            <image src="/images/slingingSlimesThumbnail.jpg"
                   width="240"

@@ -106,8 +106,7 @@ h1 {
 
 h2 {
     color: white;
-    background-color: #620380;
-    text-align: center;
+    font-size: 40px;
     font-family: Arial Black;
     width:auto;
 }
@@ -139,6 +138,9 @@ footer
     border-bottom: 4px solid #bbb;
     padding: 10px;
 }
+
+.imageflex { display: flex; }
+.imageflexcontent { margin-left: 5px; margin-top: 0; }
 
 .image-container img {
     max-width: 100%;
