@@ -139,8 +139,8 @@ footer
     padding: 10px;
 }
 
-.imageflex { display: flex; }
-.imageflexcontent { margin-left: 5px; margin-top: 0; }
+.imageflex { display: flex; flex-wrap: wrap; justify-content: center; }
+.imageflexcontent { margin-top: 0; }
 
 .image-container img {
     max-width: 100%;
@@ -162,10 +162,11 @@ footer
         max-width: 100%; 
     }
 }
-.container 
-{
-    overflow: hidden;
-}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 .filterDiv {
     color: black;
@@ -219,7 +220,6 @@ section-title {
     text-align: center;
     font-family: ARCO;
     padding: 20px;
-    padding-bottom: 10px;
     margin: auto;
     display: block;
 }

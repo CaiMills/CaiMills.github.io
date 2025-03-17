@@ -44,9 +44,7 @@
 
 <div class="imageflex">
     <iframe style="
-        margin: center;
-        border: 4px solid #FF6600;       
-        margin-left: 150px";
+        border: 4px solid #FF6600;";
             width="854"
             height="450"
             src="https://www.youtube.com/embed/esMF54ue_7Q"
@@ -58,14 +56,13 @@
     </iframe>
 
     <pre class="imageflexcontent" style="
-            margin-top: 30px;
-            margin-right: 100px;">
+            margin-top: 30px;">
         <span style="font-size: 50px; font-family: ARCO">
         <span style="color: #FF6600;">Platform:</span> <span style="color: white;">PC, Windows</span>
         <span style="color: white;">Linux, Evercade</span>
-        <span style="color: #FF6600;">Engine:</span> <span style="color: white;">Unity 2D</span>
-        <span style="color: #FF6600;">Production Time:</span> <span style="color: white;">3 Days</span>
-        <span style="color: #FF6600;">Size of Team:</span> <span style="color: white;">5</span>
+        <span style="color: #FF6600;">Engine:</span> <span style="color: white;">SDL</span>
+        <span style="color: #FF6600;">Production Time:</span> <span style="color: white;">8 Weeks</span>
+        <span style="color: #FF6600;">Size of Team:</span> <span style="color: white;">1</span>
     </pre>
 
 </div>
@@ -87,102 +84,61 @@
         Overview
     </section-title>
 
+<div class="imageflex">
     <p style="
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
-    word-wrap: break-word;
     font-family: Arial Black;
-    width: 1400px;
-    margin: auto;">
-        This project was crafted utilizing the programming framework 'SDL,' a tool I had never encountered before, hence it lacks a bit of refinement. 
-        Through this endeavor, I’ve gained a fundamental grasp of SDL and the process of porting games to a Linux environment, 
-        specifically for a device called the '<span style="color: purple;">Evercade</span>', which I achieved through using the Linux distribution 'Ubuntu'.
-    </p>
-
-    <p></p>
-
-    <p style="
-    text-align: center;
-    vertical-align: middle;
-    word-wrap: break-word;
-    font-family: Arial Black;
-    width: 1400px;
-    margin: auto;">
+    padding-left: 0;
+    width: 55vw;
+    float: left">
+This project was crafted utilizing the programming framework 'SDL,' a tool I had never encountered before, hence it lacks a bit of refinement. 
+Through this endeavor, I’ve gained a fundamental grasp of SDL and the process of porting games to a Linux environment, 
+specifically for a device called the '<span style="color: purple;">Evercade</span>', which I achieved through using the Linux distribution 'Ubuntu'.
+<br>
+<br>
 The gameplay focuses on leveraging the player's distinctive movement abilities to navigate the surroundings, particularly their melee strike. 
 When this strike intersects with orbs in the vicinity, distinct effects are triggered for the player. 
 These effects include an orb that propels the player in the reverse direction of the orb's impact, an orb that starts to traverse between two pre-determined points once struck, 
 and an orb that launches the player towards the trajectory of its hit. 
-</p>
+    </p>
 
 <image src="/gifs/pogoKingGameplay.gif"
 style="
-padding-top: 10px;
-padding-bottom: 10px;
-vertical-align: middle;
-margin: auto;
+padding-top: 0.5vw;
+padding-bottom: 1vw;
 display: flex;
-justify-content: center;
-margin-bottom: 5px;"
+width: 40vw;"
 position: static;
 width="875"
 height="500"
 alt="Pogo King Gameplay Showcase">
 </image>
 
+</div>
+
 <section-title>
     My Responsibilities
 </section-title>
 
 <pre style="
-     float: left;
-     margin-left: 10px;
-     margin-bottom: 50px;
-     font-family: Arial Black;">
+float: center;
+margin-left: 40vw;
+padding-bottom: 10px;
+font-family: Arial Black;">
 • Movement Mechanics
 • Melee Attack
 • Scene Transitions
 • Collisions
 • Orb Mechanics
-    - Bounce <i>(GIF 1)</i>
-    - Dash <i>(GIF 2)</i>
-    - Move <i>(GIF 3)</i>
+    • Bounce - Which sent the player the opposite 
+    direction of where they hit
+    • Dash - Which sent the player towards
+    direction of where they hit
+    - Move - Which would move along an axis
+    once hit
 • Gravity and Jumping
 </pre>
-
-<image src="/gifs/pogoKingMoveOrbShowcase.gif"
-       style="
-       margin-top: 20px;
-       margin-bottom: 50px;
-       float: right;"
-       width="525" ;
-       height="300"
-       alt="Move Orb">
-</image>
-
-<image src="/gifs/pogoKingDashOrbShowcase.gif"
-       style="
-       margin-top: 20px;
-       margin-right: 10px;
-       position: static;
-       float: right;
-       margin-bottom: 50px;"
-       width="600" ;
-       height="300"
-       alt="Dash Orb">
-</image>
-
-<image src="/gifs/pogoKingBounceOrbShowcase.gif"
-       style="
-       margin-top: 20px;
-       margin-right: 10px;
-       position: static;
-       float: right;
-       margin-bottom: 50px;"
-       width="195" ;
-       height="300"
-       alt="Bounce Orb">
-</image>
-
 
 </body>
 </html>
