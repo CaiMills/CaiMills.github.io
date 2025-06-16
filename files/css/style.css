@@ -31,7 +31,7 @@ section, summary, time, mark, audio, video {
 body 
 {
 	line-height: 1;
-    background-color: #0e0112;
+    background-color: #242424;
 }
 
 ol, ul 
@@ -235,7 +235,7 @@ footer
 section-title 
 {
     color: white;
-    background-color: fuchsia;
+    background-color: #141414;
     font-size: 40px;
     text-align: center;
     font-family: ARCO;
