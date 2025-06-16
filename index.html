@@ -8,7 +8,7 @@
     </head>
     <body>
         <nav>
-            <ul>
+            <ul style="background-color: #46025c; position: sticky;">
                 <li><a href="">HOME</a></li>
                 <li><a href="">PROJECTS</a></li>
                 <li><a href="files/pdf/Cai Mills CV.pdf">RÉSUMÉ</a></li>
@@ -18,16 +18,15 @@
         <div style="margin: 15px;"></div>
         <section-title>About Me</section-title>
         <div style="background-color: #1f1e1f;">
-            <div style="display: block; justify-content: center;  padding: 3em;">
-                <p>Hello! My name is Cai, and I'm a Games Programming student from Wales. I am currently attending the 
-                <a style="color: white" href="https://www.staffs.ac.uk/course/computer-games-programming-bsc" target="_blank">University of Staffordshire</a> as a third year student until May 2026.</p>
-            <p style="margin-top: 1em;">This website is a showcase of all my projects and contributions. I am constantly trying to expand my programming repertoire, and so I have dabbled in a variety of different projects ranging from graphics libraries to game engine's. I have a high-quality standard for all my personal projects, so I tend to spend as much time as I can afford on polishing each project I work on.</p>
-            <p style="margin-top: 1em;">If you wish to get into contact, please check my details at the bottom, thank you.</p>
+            <div style="padding: 3em; text-align: left;">
+                <p>Hello! My name is Cai, and I'm a Games Programming student from Wales. I am currently attending the <a style="color: white" href="https://www.staffs.ac.uk/course/computer-games-programming-bsc" target="_blank">University of Staffordshire</a> as a third year student until May 2026.</p>
+                <p style="margin-top: 1em;">This website is a showcase of all my projects and contributions. I am constantly trying to expand my programming repertoire, and so I have dabbled in a variety of different projects ranging from graphics libraries to game engine's. I have a high-quality standard for all my personal projects, so I tend to spend as much time as I can afford on polishing each project I work on.</p>
+                <p style="margin-top: 1em;">If you wish to get into contact, please check my details at the bottom, thank you.</p>
             </div>
         </div>
         <div style="margin: 15px;"></div>
         <section-title>Projects Showcase</section-title>
-        <div style="display: block; justify-content: center;  padding: 1em; text-align: center;">
+        <div style="padding: 1em; text-align: center;">
             <p>Click on the projects below to see more details;</p>
             <p><i>(Projects are Ordered newest to Oldest)</i></p>
         </div>
@@ -36,30 +35,65 @@
             <button class="btn active" onclick="filterSection('games')">Games</button>
             <button class="btn active" onclick="filterSection('other')">Other</button>
         </div>
-        <div class="container" style="padding: 1rem; display: grid; grid-template-columns: repeat(7, 240px); grid-gap: 5px; width: auto">
+        <div class="container" style="padding: 1rem; display: grid; grid-template-columns: repeat(4, 240px); grid-gap: 5px; width: auto">
             <div class ="filterDiv games">
-                <a href="pages/pogoKing.html">
+                <a href="projects/pogoKing.html">
                     <image src="images/thumbnails/pogoKingThumbnail.jpg" width="240" height="340" alt="Pogo King Game Thumbnail"></image>
                 </a>
             </div>
             <div class ="filterDiv games">
-                <a href="pages/deepDungeons.html">
+                <a href="projects/deepDungeons.html">
                     <image src="images/thumbnails/deepDungeonsThumbnail.jpg" width="240" height="340" alt="Deep Dungeons Game Thumbnail"></image>
                 </a>
             </div>
             <div class ="filterDiv games">
-                <a href="pages/notAPoliticalGame.html">
+                <a href="projects/notAPoliticalGame.html">
                     <image src="images/thumbnails/notAPoliticalGameThumbnail.jpg" width="240" height="340" alt="Not* A Polticial Game Thumbnail"></image>
                 </a>
             </div>
             <div class ="filterDiv games">
-                <a href="pages/slingingSlimes.html">
+                <a href="projects/slingingSlimes.html">
                     <image src="images/thumbnails/slingingSlimesThumbnail.jpg" width="240" height="340" alt="Slinging Slimes Game Thumbnail"></image>
                 </a>
             </div>
         </div>
         <script src="files/js/script.js"></script>
-
-
     </body>
+    <footer>
+        <h1 style="color: white; font-size: 80px; text-align: center;">Contact</h1>
+        <p style="text-align: center;">If you have any interest in contacting me, feel free to contact me on any of the following;</p>
+        <ul style="position: static; display: flex; justify-content: center;">
+            <li>
+                <a href="https://x.com/CaiMills">
+                    <image src="images/social media/twitter.png" width="80" height="80" alt="Twitter"></image>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/cai_mills/">
+                    <image src="images/social media/instagram.png" width="80" height="80" alt="Instagram"></image>
+                </a>
+            </li>
+            <li>
+                <a href="https://uk.linkedin.com/in/cai-mills-a31806241">
+                    <image src="images/social media/linkedin.png" width="80" height="80" alt="LinkedIn"></image>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/CaiMills">
+                    <image src="images/social media/github.png" width="80" height="80" alt="GitHub"></image>
+                </a>
+            </li>
+            <li>
+                <a href="https://cai-mills.itch.io/">
+                    <image src="images/social media/itchio.png" width="80" height="80" alt="Itch.io"></image>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@caimills6565">
+                    <image src="images/social media/youtube.png" width="80" height="80" alt="YouTube"></image>
+                </a>
+            </li>
+        </ul>
+        <p style="text-align: center;">(For the quickest response, send me an email here: <a href="mailto:CaiMills111@outlook.com">CaiMills111@outlook.com</a>)</p>
+    </footer>
 </html>
