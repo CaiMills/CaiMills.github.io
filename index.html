@@ -31,5 +31,35 @@
             <p>Click on the projects below to see more details;</p>
             <p><i>(Projects are Ordered newest to Oldest)</i></p>
         </div>
+        <div id="myBtnContainer" style="margin: auto; display: flex; justify-content: center; width: auto;">
+            <button class="btn active" onclick="filterSection('all')">Show All</button>
+            <button class="btn active" onclick="filterSection('games')">Games</button>
+            <button class="btn active" onclick="filterSection('other')">Other</button>
+        </div>
+        <div class="container" style="padding: 1rem; display: grid; grid-template-columns: repeat(7, 240px); grid-gap: 5px; width: auto">
+            <div class ="filterDiv games">
+                <a href="pages/pogoKing.html">
+                    <image src="images/thumbnails/pogoKingThumbnail.jpg" width="240" height="340" alt="Pogo King Game Thumbnail"></image>
+                </a>
+            </div>
+            <div class ="filterDiv games">
+                <a href="pages/deepDungeons.html">
+                    <image src="images/thumbnails/deepDungeonsThumbnail.jpg" width="240" height="340" alt="Deep Dungeons Game Thumbnail"></image>
+                </a>
+            </div>
+            <div class ="filterDiv games">
+                <a href="pages/notAPoliticalGame.html">
+                    <image src="images/thumbnails/notAPoliticalGameThumbnail.jpg" width="240" height="340" alt="Not* A Polticial Game Thumbnail"></image>
+                </a>
+            </div>
+            <div class ="filterDiv games">
+                <a href="pages/slingingSlimes.html">
+                    <image src="images/thumbnails/slingingSlimesThumbnail.jpg" width="240" height="340" alt="Slinging Slimes Game Thumbnail"></image>
+                </a>
+            </div>
+        </div>
+        <script src="files/js/script.js"></script>
+
+
     </body>
 </html>
