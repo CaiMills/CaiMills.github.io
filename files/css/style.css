@@ -43,7 +43,6 @@ ul
 {
     overflow: hidden;
     font-family: "Source Sans Pro", sans-serif;
-    
     opacity: 0.8;
 }
 
@@ -135,11 +134,15 @@ li a:hover
     font-family: Arial Black;
     display: none; /* Hidden by default */
 }
+}
 
 footer 
 {
-    padding: 1em;
-}
+    margin-top: 1em;
+    font-size: 20px;
+    text-align: center;
+    background-color: #1f1f1f;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 p 
