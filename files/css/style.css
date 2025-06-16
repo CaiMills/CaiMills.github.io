@@ -31,6 +31,7 @@ section, summary, time, mark, audio, video {
 body 
 {
 	line-height: 1;
+    background-color: #0e0112;
 }
 
 ol, ul 
@@ -42,7 +43,7 @@ ul
 {
     overflow: hidden;
     font-family: "Source Sans Pro", sans-serif;
-    background-color: #620380;
+    background-color: #46025c;
     opacity: 0.8;
 }
 
@@ -64,16 +65,17 @@ li a
 
 li a:hover 
 {
-    background-color: purple;
+    background-color: #550170;
 }
 
 .active 
 {
-    background-color: Fuchsia;
+    background-color: #6e0191;
 }
 
 @media only screen and (max-width: 480px) {
-    ul {
+    ul 
+    {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -94,34 +96,40 @@ li a:hover
     }
 }
 
-h1 {
+h1 
+{
     color: white;
     font-size: 60px;
     font-family: Arial Black;
     width:auto;
 }
 
-h2 {
+h2 
+{
     color: white;
     font-size: 40px;
     font-family: Arial Black;
     width:auto;
 }
 
-h3 {
+h3 
+{
+    margin: 0 0 2rem 0;
     color: white;
     font-size: 40px;
     font-family: Arial Black;
     width:auto;
 }
 
-p {
+p 
+{
     color: white;
     font-size: 24px;
     font-family: Arial Black;
 }
 
-pre {
+pre 
+{
     color: white;
     font-size: 24px;
     font-family: Arial Black;
@@ -136,16 +144,25 @@ footer
     padding: 10px;
 }
 
-.imageflex { display: flex; flex-wrap: wrap; justify-content: center; }
-.imageflexcontent { margin-top: 0; }
+.imageflex 
+{ 
+    display: flex; flex-wrap: wrap; justify-content: center; 
+}
 
-.image-container img {
+.imageflexcontent 
+{ 
+    margin-top: 0; 
+}
+
+.image-container img 
+{
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-.image-container {
+.image-container 
+{
     padding: 10px;
     margin: auto;
     max-width: 1000px; 
@@ -153,19 +170,23 @@ footer
 
 
 
-@media only screen and (max-width: 700px) {
-    .image-container {
+@media only screen and (max-width: 700px) 
+{
+    .image-container 
+    {
         padding: 5px;
         max-width: 100%; 
     }
 }
-.container {
+.container 
+{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-.filterDiv {
+.filterDiv 
+{
     color: black;
     margin: 2px;
     text-align: center;
@@ -181,7 +202,8 @@ footer
 }
 
 /* Style the buttons */
-.btn {
+.btn 
+{
     border: 4px solid #bbb;
     outline: none;
     padding: 14px 20px;
@@ -210,7 +232,8 @@ footer
         background-color: Fuchsia;
     }
 
-section-title {
+section-title 
+{
     color: white;
     background-color: fuchsia;
     font-size: 40px;
