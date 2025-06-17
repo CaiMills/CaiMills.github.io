@@ -1,44 +1,120 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport"
-          content="width=device-width, height=device-height, initial-scale=1"
-          charset="UTF-8" />
-
+    <head>
+        <title>Cai Mills Portfolio: Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="files/css/style.css">
+    </head>
     <style>
-        @font-face {
+        @font-face 
+        {
             font-family: ARCO;
-            src: url('/fonts/ARCO.ttf');
+            src: url(fonts/ARCO.ttf);
         }
     </style>
-
-    <title>
-        Cai Mills: About Me
-    </title>
-
-    <link href="/files/style.css"
-          rel="stylesheet" />
-</head>
-<body>
     <body>
-        <ul>
-            <li>
-                <a class="active" href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="portfolio.html">Projects</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-            <li>
-                <a href="CV.html">CV</a>
-            </li>
+        <nav>
+            <ul style="background-color: #46025c; position: sticky;">
+                <li><p style="float: inline-start; justify-items: center; font-family: ARCO; font-size: 46px; padding-left: 0.1em; padding-right: 0.1em; padding-top: 12px;">Cai Mills</p></li>
+                <li><a href="" style="font-family: Trebuchet MS, sans-serif;">HOME</a></li>
+                <li><a href="" style="font-family: Trebuchet MS, sans-serif;">PROJECTS</a></li>
+                <li><a href="files/pdf/Cai Mills CV.pdf" style="font-family: Trebuchet MS, sans-serif;">RÉSUMÉ</a></li>
+                <li><a href="" style="font-family: Trebuchet MS, sans-serif;">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div style="margin: 15px;"></div>
+        <section-title>About Me</section-title>
+        <div style="background-color: #1f1e1f;">
+            <div style="padding: 3em; text-align: left; padding-left: 12%; padding-right: 12%;">
+                <p>Hello! My name is Cai, and I'm a Games Programming student from Wales. I am currently attending the <a style="color: white" href="https://www.staffs.ac.uk/course/computer-games-programming-bsc" target="_blank">University of Staffordshire</a> as a third year student until May 2026.</p>
+                <p style="margin-top: 1em;">This website is a showcase of all my projects and contributions. I am constantly trying to expand my programming repertoire, and so I have dabbled in a variety of different projects ranging from graphics libraries to game engine's. I have a high-quality standard for all my personal projects, so I tend to spend as much time as I can afford on polishing each project I work on.</p>
+                <p style="margin-top: 1em;">If you wish to get into contact, please check my details at the bottom, thank you.</p>
+            </div>
+        </div>
+        <section-title>Projects Showcase</section-title>
+        <div style="padding: 1em; text-align: center;">
+            <p>Click on the projects below to see more details;</p>
+            <p><i>(Projects are ordered newest to oldest)</i></p>
+        </div>
+        <div id="myBtnContainer" style="margin: auto; display: flex; justify-content: center; width: auto;">
+            <button class="btn active" onclick="filterSelection('all')">Show All</button>
+            <button class="btn" onclick="filterSelection('games')">Games</button>
+            <button class="btn" onclick="filterSelection('other')">Other</button>
+        </div>
+        <div class="container" style="padding: 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); grid-gap: 5px; justify-items: center;">
+            <div class ="filterDiv other">
+                <a href="projects/J.A.D.E.html">
+                    <img src="images/thumbnails/J.A.D.E Thumbnail.jpg" width="240" height="340" alt="Just Another Dialogue Editor (J.A.D.E) Game Thumbnail"></img>
+                </a>
+            </div>
+            <div class ="filterDiv games">
+                <a href="projects/Adrenaline Junkie.html">
+                    <img src="images/thumbnails/Adrenaline Junkie Thumbnail.jpg" width="240" height="340" alt="Adrenaline Junkie Game Thumbnail"></img>
+                </a>
+            </div>
+            <div class ="filterDiv games">
+                <a href="projects/Pogo King.html">
+                    <img src="images/thumbnails/Pogo King Thumbnail.jpg" width="240" height="340" alt="Pogo King Game Thumbnail"></img>
+                </a>
+            </div>
+            <div class ="filterDiv games">
+                <a href="projects/Deep Dungeons.html">
+                    <img src="images/thumbnails/Deep Dungeons Thumbnail.jpg" width="240" height="340" alt="Deep Dungeons Game Thumbnail"></img>
+                </a>
+            </div>
+            <div class ="filterDiv games">
+                <a href="projects/Not a Political Game.html">
+                    <img src="images/thumbnails/Not a Political Game Thumbnail.jpg" width="240" height="340" alt="Not* A Polticial Game Thumbnail"></img>
+                </a>
+            </div>
+            <div class ="filterDiv games">
+                <a href="projects/Slinging Slimes.html">
+                    <img src="images/thumbnails/Slinging Slimes Thumbnail.jpg" width="240" height="340" alt="Slinging Slimes Game Thumbnail"></img>
+                </a>
+            </div>
+        </div>
+        <script src="files/js/script.js"></script>
 
-        </ul>
-    <section-title style="
-        margin-top: 20px;">
-        About Me
-    </section-title>
-</body>
+        <div style="background-color: purple; padding: 1em;">
+            <h1 style="text-align: center;">Contact</h1>
+            <p style="text-align: center;">If you have any interest in contacting me, feel free to contact me on any of the following;</p>
+            <ul style="position: static; display: flex; justify-content: center;">
+                <li>
+                    <a href="https://x.com/CaiMills">
+                        <img src="images/social media/twitter.png" width="80" height="80" alt="Twitter"></img>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/cai_mills/">
+                        <img src="images/social media/instagram.png" width="80" height="80" alt="Instagram"></img>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://uk.linkedin.com/in/cai-mills-a31806241">
+                        <img src="images/social media/linkedin.png" width="80" height="80" alt="LinkedIn"></img>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/CaiMills">
+                        <img src="images/social media/github.png" width="80" height="80" alt="GitHub"></img>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://cai-mills.itch.io/">
+                        <img src="images/social media/itchio.png" width="80" height="80" alt="Itch.io"></img>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@caimills6565">
+                        <img src="images/social media/youtube.png" width="80" height="80" alt="YouTube"></img>
+                    </a>
+                </li>
+            </ul>
+            <p style="text-align: center;">(For the quickest response, send me an email here: <a href="mailto:CaiMills111@outlook.com">CaiMills111@outlook.com</a>)</p>
+        </div>
+    </body>
+    <footer>
+        Copyright © 2025 by Cai Mills | All images, logos and names are used with permission
+    </footer>
 </html>

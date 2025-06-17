@@ -1,0 +1,226 @@
+﻿@-ms-viewport 
+{
+	width: device-width;
+}
+
+@media screen and (max-width: 480px) 
+{
+	html, body 
+    {
+		min-width: 320px;
+	}
+}
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+body 
+{
+	line-height: 1;
+    background-color: #242424;
+}
+
+ol, ul 
+{
+	list-style: none;
+}
+
+ul 
+{
+    overflow: hidden;
+    font-family: "Source Sans Pro", sans-serif;
+    opacity: 0.8;
+}
+
+li 
+{
+    float: inline-start;
+}
+
+li a 
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 37px;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+li a:hover 
+{
+    background-color: #550170;
+}
+
+.active 
+{
+    background-color: #6e0191;
+}
+
+@media only screen and (max-width: 480px) {
+    ul 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li 
+    {
+        float: none;
+        width: 100%;
+        border-right: none;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    li a 
+    {
+        font-size: 24px;
+    }
+
+.container 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+}
+
+.filterDiv 
+{
+    color: black;
+    margin: 2px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial Black;
+    display: none; /* Hidden by default */
+}
+
+footer 
+{
+    margin-top: 1em;
+    font-size: 20px;
+    text-align: center;
+    background-color: #1f1f1f;
+    font-family: 'Times New Roman', serif;
+}
+
+p 
+{
+    color: white;
+    font-size: 24px;
+    font-family: Arial Black;
+    display: block; 
+    justify-content: center; 
+    word-wrap: normal;
+}
+
+pre 
+{
+    color: white;
+    font-size: 24px;
+    font-family: Arial Black;
+}
+
+/* The "show" class is added to the filtered elements */
+.show 
+{
+    display: block;
+}
+
+/* Style the buttons */
+.btn 
+{
+    border: 4px solid #bbb;
+    outline: none;
+    padding: 14px 20px;
+    background-color: #46025c;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    font-family: ARCO;
+}
+
+    /* Add a light grey background on mouse-over */
+    .btn:hover 
+    {
+        background-color: #550170;
+    }
+
+    .btn:focus 
+    {
+        background-color: #6e0191;
+        font-weight: bold;
+    }
+
+    /* Add a dark background to the active button */
+    .btn:active 
+    {
+        background-color: #6e0191;
+    }
+
+section-title 
+{
+    color: white;
+    background-color: #141414;
+    font-size: 40px;
+    text-align: center;
+    font-family: ARCO;
+    padding: 20px;
+    margin: auto;
+    display: block;
+}
+
+h1
+{
+    color: white; 
+    font-size: 40px; 
+    font-family: ARCO; 
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+h2
+{
+    color: white; 
+    font-size: 30px; 
+    font-family: ARCO; 
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+table
+{
+    display: flex; 
+    padding: 1em;
+}
+
+tr
+{
+    color: white;
+    font-size: 24px;
+    font-family: Arial Black;
+}
+
+td
+{
+    padding-right: 10px;
+}
