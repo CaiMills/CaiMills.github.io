@@ -95,30 +95,6 @@ li a:hover
         font-size: 24px;
     }
 
-.imageflex 
-{ 
-    display: flex; flex-wrap: wrap; justify-content: center; 
-}
-
-.imageflexcontent 
-{ 
-    margin-top: 0; 
-}
-
-.image-container img 
-{
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.image-container 
-{
-    padding: 10px;
-    margin: auto;
-    max-width: 1000px; 
-}
-
 .container 
 {
     display: flex;
@@ -216,9 +192,8 @@ section-title
 h1
 {
     color: white; 
-    font-size: 60px; 
+    font-size: 40px; 
     font-family: ARCO; 
-    text-align: center;
     padding-top: 0.25em;
     padding-bottom: 0.25em;
 }
@@ -226,7 +201,6 @@ h1
 table
 {
     display: flex; 
-    justify-content: center; 
     padding: 1em;
 }
 
