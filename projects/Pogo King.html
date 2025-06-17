@@ -1,1 +1,85 @@
-﻿
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cai Mills Portfolio: Pogo King</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../files/css/style.css">
+    </head>
+    <style>
+        @font-face 
+        {
+            font-family: ARCO;
+            src: url(../fonts/ARCO.ttf);
+        }
+    </style>
+    <body>
+        <nav>
+            <ul style="background-color: #46025c; position: sticky;">
+                <li><p style="float: inline-start; justify-items: center; font-family: ARCO; font-size: 46px; padding-left: 0.1em; padding-right: 0.1em; padding-top: 12px;">Cai Mills</p></li>
+                <li><a href="../index.html" style="font-family: Trebuchet MS, sans-serif;">HOME</a></li>
+                <li><a href="../index.html" style="font-family: Trebuchet MS, sans-serif;">PROJECTS</a></li>
+                <li><a href="files/pdf/Cai Mills CV.pdf" style="font-family: Trebuchet MS, sans-serif;">RÉSUMÉ</a></li>
+                <li><a href="../index.html" style="font-family: Trebuchet MS, sans-serif;">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div style="padding-left: 15%; padding-right: 15%; padding-top: 2%;">
+            <div style="background-color: #2e2d2d;">
+                <section-title style="color: #d15b00">Pogo King</section-title>
+                <div>
+                    <div>
+                        <video width="640px" height="360px" style="padding: 0.5em; display: block; margin: 0 auto;" autoplay muted loop>
+                            <source src="../videos/Pogo King Gameplay Video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <table style="justify-content: center;">
+                            <tr>
+                                <td style="color: #d15b00">PROJECT STATUS: </td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #d15b00">PROJECT TYPE:</td>
+                                <td>Game</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #d15b00">ENGINE:</td>
+                                <td>SDL</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #d15b00">LANGUAGES:</td>
+                                <td>C++</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #d15b00">PRODUCTION TIME:</td>
+                                <td>9 weeks</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <h1 style="justify-content: left; padding-left: 0.8em; color: #d15b00;">Overview</h1>
+                <div style="padding-left: 2em; padding-right: 2em; padding-bottom: 1em;">
+                    <p>'Pogo King' was a small project developed in the SDL framework, with the intention being to try and make a simple game with a more bare-bones engine, as well as to test porting to other platforms, in this case being a Linux-based platform called the 'Evercade' using Ubuntu as the distro to do so.</p>
+                    <p style="margin-top: 1em;">The goal of the game is to traverse the simple levels by using your attack to 'pogo' your way across the treacherous gaps. This was done via hitting specific orbs throughout the level that would apply different properties to the player, such as the basic orb bouncing the player upwards.</p>
+                </div>
+                <h1 style="justify-content: left; padding-left: 0.8em; color: #d15b00">Features of this Game</h1>
+                <div style="padding-left: 2em; padding-right: 2em; padding-bottom: 1em;">
+                    <h2 style="justify-content: left; color: #994302">Orbs</h2>
+                    <p style="padding-bottom: 1em;">There are three different types of orbs to help traverse the level;</p>
+                    <p>The bounce orb - Bounces the player in the opposite direction it was hit at.</p>
+                    <video width="640px" height="360px" style="padding: 0.5em; display: block; margin: 0 auto;" autoplay muted loop>
+                        <source src="../videos/Bounce Orb Showcase.mp4" type="video/mp4">
+                    </video>
+                    <p>The dash orb - Launches the player towards the direction it was hit at.</p>
+                    <video width="640px" height="360px" style="padding: 0.5em; display: block; margin: 0 auto;" autoplay muted loop>
+                        <source src="../videos/Dash Orb Showcase.mp4" type="video/mp4">
+                    </video>
+                    <p>The moving orb - Once hit to activate, it would move between two different points, sharing the bounciness of the bounce orb.</p>
+                    <video width="640px" height="360px" style="padding: 0.5em; display: block; margin: 0 auto;" autoplay muted loop>
+                        <source src="../videos/Move Orb Showcase.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
