@@ -155,8 +155,6 @@ p
     display: block; 
     justify-content: center; 
     word-wrap: normal;
-    padding-left: 5em;
-    padding-right: 5em;
 }
 
 pre 
@@ -213,4 +211,33 @@ section-title
     padding: 20px;
     margin: auto;
     display: block;
+}
+
+h1
+{
+    color: white; 
+    font-size: 60px; 
+    font-family: ARCO; 
+    text-align: center;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+table
+{
+    display: flex; 
+    justify-content: center; 
+    padding: 1em;
+}
+
+tr
+{
+    color: white;
+    font-size: 24px;
+    font-family: Arial Black;
+}
+
+td
+{
+    padding-right: 10px;
 }
