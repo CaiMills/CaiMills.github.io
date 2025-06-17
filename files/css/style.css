@@ -155,6 +155,8 @@ p
     display: block; 
     justify-content: center; 
     word-wrap: normal;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 
 pre 
