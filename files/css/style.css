@@ -198,6 +198,15 @@ h1
     padding-bottom: 0.25em;
 }
 
+h2
+{
+    color: white; 
+    font-size: 30px; 
+    font-family: ARCO; 
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
 table
 {
     display: flex; 
