@@ -17,13 +17,13 @@
         <nav>
             <ul style="background-color: #46025c; position: sticky;">
                 <li><p style="float: inline-start; justify-items: center; font-family: ARCO; font-size: 46px; padding-left: 0.1em; padding-right: 0.1em; padding-top: 12px;">Cai Mills</p></li>
-                <li><a href="" style="font-family: Trebuchet MS, sans-serif;">HOME</a></li>
-                <li><a href="" style="font-family: Trebuchet MS, sans-serif;">PROJECTS</a></li>
+                <li><a type="button" onclick="document.getElementById('home').scrollIntoView();" style="font-family: Trebuchet MS, sans-serif;">HOME</a></li>
+                <li><a type="button" onclick="document.getElementById('projects').scrollIntoView();" style="font-family: Trebuchet MS, sans-serif;">PROJECTS</a></li>
                 <li><a href="files/pdf/Cai Mills CV.pdf" style="font-family: Trebuchet MS, sans-serif;">RÉSUMÉ</a></li>
-                <li><a href="" style="font-family: Trebuchet MS, sans-serif;">CONTACT</a></li>
+                <li><a type="button" onclick="document.getElementById('contacts').scrollIntoView();"  style="font-family: Trebuchet MS, sans-serif;">CONTACT</a></li>
             </ul>
         </nav>
-        <div style="margin: 15px;"></div>
+        <div style="margin: 15px;" id="home"></div>
         <section-title>About Me</section-title>
         <div style="background-color: #1f1e1f;">
             <div style="padding: 3em; text-align: left; padding-left: 12%; padding-right: 12%;">
@@ -32,6 +32,7 @@
                 <p style="margin-top: 1em;">If you wish to get into contact, please check my details at the bottom, thank you.</p>
             </div>
         </div>
+        <div id="projects"></div>
         <section-title>Projects Showcase</section-title>
         <div style="padding: 1em; text-align: center;">
             <p>Click on the projects below to see more details;</p>
@@ -76,7 +77,7 @@
         </div>
         <script src="files/js/script.js"></script>
 
-        <div style="background-color: purple; padding: 1em;">
+        <div style="background-color: purple; padding: 1em;" id="contacts">
             <h1 style="text-align: center;">Contact</h1>
             <p style="text-align: center;">If you have any interest in contacting me, feel free to contact me on any of the following;</p>
             <ul style="position: static; display: flex; justify-content: center;">
