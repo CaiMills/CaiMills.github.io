@@ -23,7 +23,7 @@
             <ul style="background-color: #46025c; position: sticky;">
                 <li><a type="button" onclick="document.getElementById('home').scrollIntoView();" style="font-family: MADE TOMMY;">HOME</a></li>
                 <li><a type="button" onclick="document.getElementById('projects').scrollIntoView();" style="font-family: MADE TOMMY;">PROJECTS</a></li>
-                <li><a href="files/pdf/Cai Mills CV.pdf" style="font-family: MADE TOMMY;">RÉSUMÉ</a></li>
+                <li><a href="files/pdf/Cai Mills CV.pdf" style="font-family: MADE TOMMY;">CV</a></li>
                 <li><a type="button" onclick="document.getElementById('contacts').scrollIntoView();"  style="font-family: MADE TOMMY;">CONTACT</a></li>
             </ul>
         </nav>
@@ -46,34 +46,36 @@
             <button class="btn active" onclick="filterSelection('all')">Show All</button>
             <button class="btn" onclick="filterSelection('games')">Games</button>
             <button class="btn" onclick="filterSelection('other')">Other</button>
+            <button class="btn" onclick="filterSelection('personal')">Personal</button>
+            <button class="btn" onclick="filterSelection('education')">Education</button>
         </div>
         <div class="container" style="padding: 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); grid-gap: 5px; justify-items: center;">
-            <div class ="filterDiv other">
+            <div class ="filterDiv other, personal">
                 <a href="projects/J.A.D.E.html">
                     <img src="images/thumbnails/J.A.D.E Thumbnail.jpg" width="240" height="340" alt="Just Another Dialogue Editor (J.A.D.E) Game Thumbnail"></img>
                 </a>
             </div>
-            <div class ="filterDiv games">
+            <div class ="filterDiv games, education">
                 <a href="projects/Adrenaline Junkie.html">
                     <img src="images/thumbnails/Adrenaline Junkie Thumbnail.jpg" width="240" height="340" alt="Adrenaline Junkie Game Thumbnail"></img>
                 </a>
             </div>
-            <div class ="filterDiv games">
+            <div class ="filterDiv games, education">
                 <a href="projects/Pogo King.html">
                     <img src="images/thumbnails/Pogo King Thumbnail.jpg" width="240" height="340" alt="Pogo King Game Thumbnail"></img>
                 </a>
             </div>
-            <div class ="filterDiv games">
+            <div class ="filterDiv games, education">
                 <a href="projects/Deep Dungeons.html">
                     <img src="images/thumbnails/Deep Dungeons Thumbnail.jpg" width="240" height="340" alt="Deep Dungeons Game Thumbnail"></img>
                 </a>
             </div>
-            <div class ="filterDiv games">
+            <div class ="filterDiv games, personal">
                 <a href="projects/Not a Political Game.html">
                     <img src="images/thumbnails/Not a Political Game Thumbnail.jpg" width="240" height="340" alt="Not* A Polticial Game Thumbnail"></img>
                 </a>
             </div>
-            <div class ="filterDiv games">
+            <div class ="filterDiv games, personal">
                 <a href="projects/Slinging Slimes.html">
                     <img src="images/thumbnails/Slinging Slimes Thumbnail.jpg" width="240" height="340" alt="Slinging Slimes Game Thumbnail"></img>
                 </a>
@@ -83,9 +85,9 @@
 
         <div style="background-color: purple; padding: 1em;" id="contacts">
             <h1 style="text-align: center;">Contact</h1>
-            <p style="text-align: center;">If you have any interest in contacting me, feel free to contact me on any of the following;</p>
+            <p style="text-align: center;">Feel free to contact me on any of the following;</p>
             <ul style="position: static; display: flex; justify-content: center;">
-                <li>
+<!--                <li>
                     <a href="https://x.com/CaiMills">
                         <img src="images/social media/twitter.png" width="80" height="80" alt="Twitter"></img>
                     </a>
@@ -99,7 +101,7 @@
                     <a href="https://www.instagram.com/cai_mills/">
                         <img src="images/social media/instagram.png" width="80" height="80" alt="Instagram"></img>
                     </a>
-                </li>
+                </li>-->
                 <li>
                     <a href="https://uk.linkedin.com/in/cai-mills-a31806241">
                         <img src="images/social media/linkedin.png" width="80" height="80" alt="LinkedIn"></img>
