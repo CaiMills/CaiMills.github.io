@@ -27,61 +27,63 @@
                 <li><a type="button" onclick="document.getElementById('contacts').scrollIntoView();"  style="font-family: MADE TOMMY;">CONTACT</a></li>
             </ul>
         </nav>
-        <div style="margin: 15px;" id="home"></div>
-        <section-title>About Me</section-title>
-        <div style="background-color: #1f1e1f;">
-            <div style="padding: 3em; text-align: left; padding-left: 12%; padding-right: 12%;">
-                <p>Hello! My name is Cai, and I'm a Games Programming student from Wales. I am currently attending the <a style="color: white" href="https://www.staffs.ac.uk/course/computer-games-programming-bsc" target="_blank">University of Staffordshire</a> as a third year student until May 2026.</p>
-                <p style="margin-top: 1em;">This website is a showcase of all my projects and contributions. I am constantly trying to expand my programming repertoire, and so I have dabbled in a variety of different projects ranging from graphics libraries to game engine's. I have a high-quality standard for all my personal projects, so I tend to spend as much time as I can afford on polishing each project I work on.</p>
-                <p style="margin-top: 1em;">If you wish to get into contact, please check my details at the bottom, thank you.</p>
+        <div id="home">
+            <section-title>About Me</section-title>
+            <div style="background-color: #1f1e1f;">
+                <div style="padding: 3em; text-align: left; padding-left: 12%; padding-right: 12%;">
+                    <p>Hello! My name is Cai, and I'm a Games Programming student from Wales. I am currently attending the <a style="color: white" href="https://www.staffs.ac.uk/course/computer-games-programming-bsc" target="_blank">University of Staffordshire</a> as a third year student until May 2026.</p>
+                    <p style="margin-top: 1em;">This website is a showcase of all my projects and contributions. I am constantly trying to expand my programming repertoire, and so I have dabbled in a variety of different projects ranging from graphics libraries to game engine's. I have a high-quality standard for all my personal projects, so I tend to spend as much time as I can afford on polishing each project I work on.</p>
+                    <p style="margin-top: 1em;">If you wish to get into contact, please check my details at the bottom, thank you.</p>
+                </div>
             </div>
         </div>
-        <div id="projects"></div>
-        <section-title>Projects Showcase</section-title>
-        <div style="padding: 1em; text-align: center;">
-            <p>Click on the projects below to see more details;</p>
-            <p><i>(Projects are ordered newest to oldest)</i></p>
+        <div id="projects">
+            <section-title>Projects Showcase</section-title>
+            <div style="padding: 1em; text-align: center;">
+                <p>Click on the projects below to see more details;</p>
+                <p><i>(Projects are ordered newest to oldest)</i></p>
+            </div>
+            <div id="myBtnContainer" style="margin: auto; display: flex; justify-content: center; width: auto;">
+                <button class="btn active" onclick="filterSelection('all')">Show All</button>
+                <button class="btn" onclick="filterSelection('games')">Games</button>
+                <button class="btn" onclick="filterSelection('other')">Other</button>
+                <button class="btn" onclick="filterSelection('personal')">Personal</button>
+                <button class="btn" onclick="filterSelection('education')">Education</button>
+            </div>
+            <div class="container" style="padding: 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); grid-gap: 5px; justify-items: center;">
+                <div class ="filterDiv other, personal">
+                    <a href="projects/J.A.D.E.html">
+                        <img src="images/thumbnails/J.A.D.E Thumbnail.jpg" width="240" height="340" alt="Just Another Dialogue Editor (J.A.D.E) Game Thumbnail"></img>
+                    </a>
+                </div>
+                <div class ="filterDiv games, education">
+                    <a href="projects/Adrenaline Junkie.html">
+                        <img src="images/thumbnails/Adrenaline Junkie Thumbnail.jpg" width="240" height="340" alt="Adrenaline Junkie Game Thumbnail"></img>
+                    </a>
+                </div>
+                <div class ="filterDiv games, education">
+                    <a href="projects/Pogo King.html">
+                        <img src="images/thumbnails/Pogo King Thumbnail.jpg" width="240" height="340" alt="Pogo King Game Thumbnail"></img>
+                    </a>
+                </div>
+                <div class ="filterDiv games, education">
+                    <a href="projects/Deep Dungeons.html">
+                        <img src="images/thumbnails/Deep Dungeons Thumbnail.jpg" width="240" height="340" alt="Deep Dungeons Game Thumbnail"></img>
+                    </a>
+                </div>
+                <!--<div class ="filterDiv games, personal">
+                    <a href="projects/Not a Political Game.html">
+                        <img src="images/thumbnails/Not a Political Game Thumbnail.jpg" width="240" height="340" alt="Not* A Polticial Game Thumbnail"></img>
+                    </a>
+                </div>-->
+                <div class ="filterDiv games, personal">
+                    <a href="projects/Slinging Slimes.html">
+                        <img src="images/thumbnails/Slinging Slimes Thumbnail.jpg" width="240" height="340" alt="Slinging Slimes Game Thumbnail"></img>
+                    </a>
+                </div>
+            </div>
+            <script src="files/js/script.js"></script>
         </div>
-        <div id="myBtnContainer" style="margin: auto; display: flex; justify-content: center; width: auto;">
-            <button class="btn active" onclick="filterSelection('all')">Show All</button>
-            <button class="btn" onclick="filterSelection('games')">Games</button>
-            <button class="btn" onclick="filterSelection('other')">Other</button>
-            <button class="btn" onclick="filterSelection('personal')">Personal</button>
-            <button class="btn" onclick="filterSelection('education')">Education</button>
-        </div>
-        <div class="container" style="padding: 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); grid-gap: 5px; justify-items: center;">
-            <div class ="filterDiv other, personal">
-                <a href="projects/J.A.D.E.html">
-                    <img src="images/thumbnails/J.A.D.E Thumbnail.jpg" width="240" height="340" alt="Just Another Dialogue Editor (J.A.D.E) Game Thumbnail"></img>
-                </a>
-            </div>
-            <div class ="filterDiv games, education">
-                <a href="projects/Adrenaline Junkie.html">
-                    <img src="images/thumbnails/Adrenaline Junkie Thumbnail.jpg" width="240" height="340" alt="Adrenaline Junkie Game Thumbnail"></img>
-                </a>
-            </div>
-            <div class ="filterDiv games, education">
-                <a href="projects/Pogo King.html">
-                    <img src="images/thumbnails/Pogo King Thumbnail.jpg" width="240" height="340" alt="Pogo King Game Thumbnail"></img>
-                </a>
-            </div>
-            <div class ="filterDiv games, education">
-                <a href="projects/Deep Dungeons.html">
-                    <img src="images/thumbnails/Deep Dungeons Thumbnail.jpg" width="240" height="340" alt="Deep Dungeons Game Thumbnail"></img>
-                </a>
-            </div>
-            <!--#<div class ="filterDiv games, personal">
-                <a href="projects/Not a Political Game.html">
-                    <img src="images/thumbnails/Not a Political Game Thumbnail.jpg" width="240" height="340" alt="Not* A Polticial Game Thumbnail"></img>
-                </a>
-            </div>-->
-            <div class ="filterDiv games, personal">
-                <a href="projects/Slinging Slimes.html">
-                    <img src="images/thumbnails/Slinging Slimes Thumbnail.jpg" width="240" height="340" alt="Slinging Slimes Game Thumbnail"></img>
-                </a>
-            </div>
-        </div>
-        <script src="files/js/script.js"></script>
 
         <div style="background-color: purple; padding: 1em;" id="contacts">
             <h1 style="text-align: center;">Contact</h1>
