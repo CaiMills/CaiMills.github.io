@@ -31,8 +31,8 @@
             <div style="background-color: #2e2d2d;">
                 <section-title style="color: #fddc03">Quack Game Engine</section-title>
                 <div>
-                <video width="640px" height="360px" style="display: block; margin: 0 auto; border: 3px solid rgba(255, 0, 149, 0.863); margin-top: 0.5em;" autoplay muted loop disablePictureInPicture>
-                            <source src="../videos/Beatdown/Beatdown Demonstration.webm" type="video/webm">
+                <video width="640px" height="360px" style="display: block; margin: 0 auto; border: 3px solid #fddc03; margin-top: 0.5em;" autoplay muted loop disablePictureInPicture>
+                            <source src="../videos/" type="video/webm">
                         </video>
                     <div>
                         <table style="justify-content: center;">
@@ -69,41 +69,33 @@
                 </div>
                 <h1 style="justify-content: left; padding-left: 0.8em; color: #fddc03;">Overview</h1>
                 <div style="padding-left: 2em; padding-right: 2em; padding-bottom: 1em;">
-                    <p>The 'Quack' Game Engine was a team-based project during my 3rd year of University where we were tasked with designing and developing a complete, feature full,
-                        game engine entirely from stratch (with help from libraries if deemed appropriate), whilst also ensuring that the engine's architecture was abstracted enough that it
-                        could support re-use across any number of additional projects, as well as be ported to different platforms, with our choice of platforms being Windows and Playstation 5.
+                    <p>The 'Quack' Game Engine was a team-based project during my 3rd year of University where we were tasked with designing and developing a complete, feature-full,
+                        game engine entirely from scratch (with help from libraries if deemed appropriate). Throughout development, we had to ensure that the engine's architecture was abstracted enough that it
+                        could support reuse across any number of additional projects, as well as be ported to different platforms.
                         <br>
-                        
+                        <br>
+                        The platforms we decided to focus on were Windows and Playstation 5, as for the games we designed to showcase the engine, we decided to replicate the popular multiplayer party game 'Duck Game' for one of them,
+                        with the other being a level editor for the 'Duck Game' replicate. Because of my area of expertise for this project, I will be focusing on the 'Duck Game' project.
+                        <br>
+                        <br>
+                        My primary role throughout development was as the teams audio programmer, and I did so via intergrating 'Fmod' into our Engine, this is because creating an audio library
+                        from scratch was far outside the modules scope, as well as because 'Fmod' is often used within industry.
                     </p>
                 </div>
                 <p>&nbsp;</p>
-                <h1 style="justify-content: left; padding-left: 0.8em; color: rgb(247, 0, 255)">Highlighted Feautres</h1>
+                <h1 style="justify-content: left; padding-left: 0.8em; color: #fddc03">My Contributions</h1>
                 <div style="padding-left: 2em; padding-right: 2em; padding-bottom: 1em;">
-                    <h2 style="justify-content: left; color: rgba(255, 0, 149, 0.863)">Beat-map Editor</h2>
-                    <p>This beat-map editor is custom designed to best fit the rhythm gameplay loop I plan to expand upon, as for features currently implemented;</p>
-                    <p>
-                        <br>&nbsp;• Customisable map details (Song name, artist, album, cover art, etc)
-                        <br>&nbsp;• Time measure editing
-                        <br>&nbsp;• Changable timing points, allowing dynamic shifts in beats-per-minute throughout a map
-                        <br>&nbsp;• Map Serialisation and Deserialisation
-                    </p>
+                    <h2 style="justify-content: left; color: #f3922a">3D Spatialisation</h2>
+                    <p>This was done by setting an object as a listener, with the closer another sound in-game is to the listener, the louder they are, and vice versa until 
+                        they exist the maximum range, which is set in the Audio Engine's initialisation.​
+                        <br>
+                        <br>
+                        For demonstration purposes, the listener just moves left and right to 
+                        show the music being affected.
+                    ​</p>
                 </div>
-                <video width="640px" height="360px" style="display: block; margin: 0 auto; border: 3px solid rgba(255, 0, 149, 0.863); margin-top: 0.5em;;" autoplay muted loop disablePictureInPicture>
-                    <source src="../videos/Beatdown/Beatmap Editor Showcase.webm" type="video/webm">
-                </video>
-                <div style="padding-left: 2em; padding-right: 2em; padding-bottom: 1em;">
-                    <h2 style="justify-content: left; color: rgba(255, 0, 149, 0.863)">Track Selection Menu</h2>
-                    <p>This screen takes the custom serialised beat-maps and then deserialises them, using the decoded map data to display the appropriate data, dynamically loading every map saved locally. There are also different filter options, making finding
-                        specific maps incredibly simple.
-                    </p>
-                </div>
-                <img src="../images/screenshots/Beatdown Track Selection Screenshot.PNG" width="640" height="360px" style="display: block; margin: 0 auto; border: 3px solid rgba(255, 0, 149, 0.863); margin-top: 0.5em;"></img>
-                <div style="padding-left: 2em; padding-right: 2em; padding-bottom: 1em;">
-                    <h2 style="justify-content: left; color: rgba(255, 0, 149, 0.863)">Rhythm Gameplay</h2>
-                    <p>For now, this remains very simplistic, as the primary focus of this project was the beat-map editor, but this will change throughout further development.</p>
-                </div>
-                <video width="640px" height="360px" style="display: block; margin: 0 auto; border: 3px solid rgba(255, 0, 149, 0.863); margin-bottom: 0.5em;" autoplay muted loop disablePictureInPicture>
-                    <source src="../videos/Beatdown/Beatdown Gameplay Showcase.webm" type="video/webm">
+                <video width="640px" height="360px" style="display: block; margin: 0 auto; border: 3px solid #fddc03; margin-top: 0.5em;"  muted autoplay webkit-playsinline disablePictureInPicture>
+                    <source src="../videos/Quack/3D Spatialisation Demo.webm" type="video/webm">
                 </video>
             </div>
         </div>
