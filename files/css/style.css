@@ -114,6 +114,19 @@ li a:hover
     display: none; /* Hidden by default */
 }
 
+ .thumbnail{
+    position:relative;
+ }
+ .thumbnail:hover {
+     transform: scale(1.03);
+     display:block;
+     z-index:999;
+     cursor: pointer;
+     -webkit-transition-property: all;
+     -webkit-transition-duration: 0.2s;
+     -webkit-transition-timing-function: ease;
+}
+
 footer 
 {
     margin-top: 1em;
