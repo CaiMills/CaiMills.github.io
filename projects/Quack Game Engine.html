@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cai Mills Portfolio: Quack Game Engine</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../files/css/style.css">
+    </head>
+    <style>
+        @font-face 
+        {
+            font-family: ARCO;
+            src: url(../fonts/ARCO.ttf);
+        }
+        @font-face 
+        {
+            font-family: MADE TOMMY;
+            src: url(../fonts/MADE\ TOMMY\ ExtraBold.otf);
+        }
+    </style>
+    <body>
+        <nav>
+            <ul style="background-color: #46025c; position: sticky;">
+                <li><a href="../index.html" style="font-family: MADE TOMMY;">HOME</a></li>
+                <li><a href="../index.html" style="font-family: MADE TOMMY;">PROJECTS</a></li>
+                <li><a href="files/pdf/Cai Mills CV.pdf" style="font-family: MADE TOMMY;">CV</a></li>
+                <li><a href="../index.html" style="font-family: MADE TOMMY;">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div style="padding-left: 15%; padding-right: 15%; padding-top: 2%;">
+            <div style="background-color: #2e2d2d;">
+                <section-title style="color: #fddc03">Quack Game Engine</section-title>
+                <div>
+                <video width="640px" height="360px" style="display: block; margin: 0 auto; border: 3px solid rgba(255, 0, 149, 0.863); margin-top: 0.5em;" autoplay muted loop disablePictureInPicture>
+                            <source src="../videos/Beatdown/Beatdown Demonstration.webm" type="video/webm">
+                        </video>
+                    <div>
+                        <table style="justify-content: center;">
+                            <tr>
+                                <td style="color: #f3922a">PROJECT STATUS: </td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #f3922a">PROJECT TYPE:</td>
+                                <td>Education</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #f3922a">LANGUAGES:</td>
+                                <td>C++</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #f3922a">SUPPORTED PLATFORMS:</td>
+                                <td>Windows & Playstation 5</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #f3922a">TEAM SIZE:</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #f3922a">TEAM ROLE:</td>
+                                <td>Audio Programmer</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #f3922a">PRODUCTION TIME:</td>
+                                <td>9 weeks</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <h1 style="justify-content: left; padding-left: 0.8em; color: #fddc03;">Overview</h1>
+                <div style="padding-left: 2em; padding-right: 2em; padding-bottom: 1em;">
+                    <p>The 'Quack' Game Engine was a team-based project during my 3rd year of University where we were tasked with designing and developing a complete, feature full,
+                        game engine entirely from stratch (with help from libraries if deemed appropriate), whilst also ensuring that the engine's architecture was abstracted enough that it
+                        could support re-use across any number of additional projects, as well as be ported to different platforms, with our choice of platforms being Windows and Playstation 5.
+                        <br>
+                        
+                    </p>
+                </div>
+                <p>&nbsp;</p>
+                <h1 style="justify-content: left; padding-left: 0.8em; color: rgb(247, 0, 255)">Highlighted Feautres</h1>
+                <div style="padding-left: 2em; padding-right: 2em; padding-bottom: 1em;">
+                    <h2 style="justify-content: left; color: rgba(255, 0, 149, 0.863)">Beat-map Editor</h2>
+                    <p>This beat-map editor is custom designed to best fit the rhythm gameplay loop I plan to expand upon, as for features currently implemented;</p>
+                    <p>
+                        <br>&nbsp;• Customisable map details (Song name, artist, album, cover art, etc)
+                        <br>&nbsp;• Time measure editing
+                        <br>&nbsp;• Changable timing points, allowing dynamic shifts in beats-per-minute throughout a map
+                        <br>&nbsp;• Map Serialisation and Deserialisation
+                    </p>
+                </div>
+                <video width="640px" height="360px" style="display: block; margin: 0 auto; border: 3px solid rgba(255, 0, 149, 0.863); margin-top: 0.5em;;" autoplay muted loop disablePictureInPicture>
+                    <source src="../videos/Beatdown/Beatmap Editor Showcase.webm" type="video/webm">
+                </video>
+                <div style="padding-left: 2em; padding-right: 2em; padding-bottom: 1em;">
+                    <h2 style="justify-content: left; color: rgba(255, 0, 149, 0.863)">Track Selection Menu</h2>
+                    <p>This screen takes the custom serialised beat-maps and then deserialises them, using the decoded map data to display the appropriate data, dynamically loading every map saved locally. There are also different filter options, making finding
+                        specific maps incredibly simple.
+                    </p>
+                </div>
+                <img src="../images/screenshots/Beatdown Track Selection Screenshot.PNG" width="640" height="360px" style="display: block; margin: 0 auto; border: 3px solid rgba(255, 0, 149, 0.863); margin-top: 0.5em;"></img>
+                <div style="padding-left: 2em; padding-right: 2em; padding-bottom: 1em;">
+                    <h2 style="justify-content: left; color: rgba(255, 0, 149, 0.863)">Rhythm Gameplay</h2>
+                    <p>For now, this remains very simplistic, as the primary focus of this project was the beat-map editor, but this will change throughout further development.</p>
+                </div>
+                <video width="640px" height="360px" style="display: block; margin: 0 auto; border: 3px solid rgba(255, 0, 149, 0.863); margin-bottom: 0.5em;" autoplay muted loop disablePictureInPicture>
+                    <source src="../videos/Beatdown/Beatdown Gameplay Showcase.webm" type="video/webm">
+                </video>
+            </div>
+        </div>
+    </body>
+     <footer>
+        <div style="background-color: purple; padding: 1em;" id="contacts">
+            <h1 style="text-align: center;">Contact</h1>
+            <p style="text-align: center;">Feel free to contact me on any of the following;</p>
+            <p>&nbsp;</p>
+            <ul style="position: static; display: flex; justify-content: center;">
+                <li>
+                    <a href="https://uk.linkedin.com/in/cai-mills-a31806241">
+                        <img src="/images/social media/linkedin.png" width="80" height="80" alt="LinkedIn"></img>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/CaiMills">
+                        <img src="/images/social media/github.png" width="80" height="80" alt="GitHub"></img>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://cai-mills.itch.io/">
+                        <img src="/images/social media/itchio.png" width="80" height="80" alt="Itch.io"></img>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@caimills6565">
+                        <img src="/images/social media/youtube.png" width="80" height="80" alt="YouTube"></img>
+                    </a>
+                </li>
+            </ul>
+            <p style="text-align: center;">(For the quickest response, send me an email here: <a href="mailto:CaiMills111@outlook.com">CaiMills111@outlook.com</a>)</p>
+        </div>
+        <b>Copyright © 2026 by Cai Mills | All images, logos and names are used with permission</b>
+    </footer>
+</html>
